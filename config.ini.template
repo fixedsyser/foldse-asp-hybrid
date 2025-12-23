@@ -1,3 +1,4 @@
+# copy this file, name it config.ini and fill in the credentials
 [settings]
 #foldse_username = # add your FOLD-SE username/email here
 #foldse_password = # add your FOLD-SE password here 
