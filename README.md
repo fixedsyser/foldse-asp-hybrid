@@ -15,6 +15,7 @@ This project uses the Fold-SE API created by the University of Texas at Dallas, 
     pip3 install -r requirements.txt
     ```
     create an account at [Fold-SE API registration](http://ec2-52-0-60-249.compute-1.amazonaws.com/foldse-api/) by filling in your email.
+    Copy the contents of the file `config.ini.template` into a file named `config.ini`
     Fill in your email and the password sent to you in `config.ini`
 
 2. Execute:
