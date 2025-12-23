@@ -36,6 +36,7 @@ def main():
         and standard deviation, and saves the results to CSV files.
     """
 
+    # be aware that big datasets like student_depression may take some time
     datasets = ["heart", "autism", "breastw", "ecoli", "kidney", "student_depression"]
     results = []
 
@@ -47,7 +48,7 @@ def main():
         X = df.drop("label", axis=1)
         y = df["label"]
 
-        num_experiments = 2
+        num_experiments = 10
         all_experiments_results = []
         stats_data = []
 
