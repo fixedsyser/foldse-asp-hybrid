@@ -39,15 +39,14 @@ def generate_model(model: FoldModel, train_dict, dataset_name) -> FoldModel:
     try:
         response = requests.post("http://ec2-52-0-60-249.compute-1.amazonaws.com/auth/foldmodel_binary/", json=payload) # Uncomment if you want to run binary classification model.
         response_obj = response.json()
+        if('detail' in response_obj):
+            raise Exception(response_obj['detail'])
         if(response_obj['error']==None):             
             return set_model(response_obj, model)
-        
         else:
-            print('Error: ',response_obj['error'])
-    except Exception as e:
-        print("There was an error processing your request:")
-        print(e)
-    return model
+            raise Exception(response_obj['error'])
+    except Exception as e: 
+        raise RuntimeError("Fold-SE API threw an error during generation: ", e)
 
 def predict_with_model(model: FoldModel, test_dict)  -> list[bool]:
     print('predict with foldse...')
@@ -67,23 +66,18 @@ def predict_with_model(model: FoldModel, test_dict)  -> list[bool]:
         'json_model': json.dumps((model.__dict__))
     }
 
-    response = requests.post("http://ec2-52-0-60-249.compute-1.amazonaws.com/auth/foldmodel_binary_json/", json=payload) # Uncomment if you want to run binary classification model.
-
     try:
+        response = requests.post("http://ec2-52-0-60-249.compute-1.amazonaws.com/auth/foldmodel_binary_json/", json=payload) # Uncomment if you want to run binary classification model.
         response = response.json()
+        if('detail' in response):
+                raise Exception(response['detail'])
         for response_obj in response:
-            try:
-                if(response_obj['error']==None):
-                    return response_obj['test_results']
-                else:
-                    print('Error: ', response_obj['error'])
-            except Exception as e:
-                print("There was an error processing your request:")
-                print(e)
-                print("-----")
-    except:
-        print(response)
-    return []
+            if(response_obj['error']==None):
+                return response_obj['test_results']
+            else:
+                raise Exception(response_obj['error'])
+    except Exception as e: 
+        raise RuntimeError("Fold-SE API threw an error during prediction: ", e)
         
 
 def set_model(json_obj, model):
