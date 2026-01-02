@@ -39,7 +39,7 @@ def main():
     # be aware that big datasets like student_depression may take some time
     datasets = ["heart", "autism", "breastw", "ecoli", "kidney", "student_depression"]
     results = []
-    time_holder = []
+    comparison_holder = []
 
     for dataset_name in datasets:
         print(f"\nProcessing dataset: {dataset_name}")
@@ -52,11 +52,11 @@ def main():
         num_experiments = 10
         all_experiments_results = []
         stats_data = []
+        exp_time_counter, exp_rule_counter = [],[]
 
         asp_programs = {}
         important_rules = {}
         explanations_list = {}
-        exp_time_counter = []
 
         for exp_num in range(num_experiments):
             start_timer = time.perf_counter_ns()
@@ -205,6 +205,7 @@ def main():
                 )
             exp_time_ms = (time.perf_counter_ns() - start_timer) // 1000000
             exp_time_counter.append(exp_time_ms)
+            exp_rule_counter.append(len(model_foldse.flat_rules))
 
         df_results = pd.DataFrame(all_experiments_results)
         metrics = [
@@ -309,14 +310,15 @@ def main():
             "./results/statistical_tests_results.csv", mode="a", index=False
         )
         
-        time_holder.append({
+        comparison_holder.append({
             "dataset": dataset_name,
             "mean time (ms)": sum(exp_time_counter) / len(exp_time_counter),
+            "# ASP rules": sum(exp_rule_counter) / len(exp_rule_counter)
         })
      
-    # write mean times (ms) per dataset to file    
-    pd.DataFrame(time_holder).to_csv(
-        "./results/time_results.csv", index=False
+    # write mean times (ms) and # of rules per dataset to file for comparison with foldr++ hybrid model    
+    pd.DataFrame(comparison_holder).to_csv(
+        "./results/comparison_results.csv", index=False
     ) 
 
     final_results_df = pd.concat(results, ignore_index=True)
