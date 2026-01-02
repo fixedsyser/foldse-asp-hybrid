@@ -539,7 +539,7 @@ def proof_tree(rules, x, rule_head):
 
     return [_decode_rule(r) for r in rules if r[0] == rule_head]
 
-class Foldrpp:
+class FoldModel:
     def __init__(self, str_attrs, num_attrs, label, pos_val):
         self.str_attrs = str_attrs
         self.num_attrs = num_attrs
@@ -659,7 +659,7 @@ def load_model_from_file(file_name):
     model_tab = json.loads(model_json)
     str_attrs, num_attrs = model_tab["str_attrs"], model_tab["num_attrs"]
     label, pos_val = model_tab["label"], model_tab["pos_val"]
-    ret = Foldrpp(str_attrs, num_attrs, label, pos_val)
+    ret = FoldModel(str_attrs, num_attrs, label, pos_val)
     ret.flat_rules = [_map_to_rule(mp) for mp in model_tab["flat_rules"]]
     ret.rule_head = _norm_item(model_tab["rule_head"])
     return ret

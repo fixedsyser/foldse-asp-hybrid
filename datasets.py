@@ -1,4 +1,4 @@
-from foldrpp import Foldrpp
+from fold_model import FoldModel
 
 
 def autism():
@@ -19,7 +19,7 @@ def autism():
 
     The dataset contains 704 instances.
 
-    :return: A Foldrpp object and a list of dictionaries representing the dataset.
+    :return: A FoldModel object and a list of dictionaries representing the dataset.
     """
     str_attrs = [
         "a1",
@@ -41,7 +41,7 @@ def autism():
     ]
     num_attrs = ["age"]
     label, pos_val = "label", "NO"
-    model = Foldrpp(str_attrs, num_attrs, label, pos_val)
+    model = FoldModel(str_attrs, num_attrs, label, pos_val)
     data = model.load_data("data/autism.csv")
     print("\n% autism dataset", len(data), len(str_attrs + num_attrs) + 1)
     return model, data
@@ -65,7 +65,7 @@ def breastw():
     The label is 'malignant' or 'benign'.
     The dataset contains 569 instances.
 
-    :return: A Foldrpp object and a list of dictionaries representing the dataset.
+    :return: A FoldModel object and a list of dictionaries representing the dataset.
     """
     str_attrs = [
         "clump_thickness",
@@ -80,7 +80,7 @@ def breastw():
     ]
     num_attrs = []
     label, pos_val = "label", "malignant"
-    model = Foldrpp(str_attrs, num_attrs, label, pos_val)
+    model = FoldModel(str_attrs, num_attrs, label, pos_val)
     data = model.load_data("data/breastw.csv")
     print("\n% breastw dataset", len(data), len(str_attrs + num_attrs) + 1)
     return model, data
@@ -108,7 +108,7 @@ def heart():
 
     The dataset contains data instances with these attributes.
 
-    :return: A Foldrpp object and a list of dictionaries representing the dataset.
+    :return: A FoldModel object and a list of dictionaries representing the dataset.
     """
     str_attrs = [
         "sex",
@@ -128,7 +128,7 @@ def heart():
         "oldpeak",
     ]
     label, pos_val = "label", "absent"
-    model = Foldrpp(str_attrs, num_attrs, label, pos_val)
+    model = FoldModel(str_attrs, num_attrs, label, pos_val)
     data = model.load_data("data/heart.csv")
     print("\n% heart dataset", len(data), len(str_attrs + num_attrs) + 1)
     return model, data
@@ -166,7 +166,7 @@ def kidney():
 
     The dataset contains data instances with these attributes.
 
-    :return: A Foldrpp object and a list of dictionaries representing the dataset.
+    :return: A FoldModel object and a list of dictionaries representing the dataset.
     """
     str_attrs = [
         "al",
@@ -197,7 +197,7 @@ def kidney():
         "rbcc",
     ]
     label, pos_val = "label", "ckd"
-    model = Foldrpp(str_attrs, num_attrs, label, pos_val)
+    model = FoldModel(str_attrs, num_attrs, label, pos_val)
     data = model.load_data("data/kidney.csv")
     print("\n% kidney dataset", len(data), len(str_attrs + num_attrs) + 1)
     return model, data
@@ -221,12 +221,12 @@ def ecoli():
 
     The dataset contains 336 instances.
 
-    :return: A Foldrpp object and a list of dictionaries representing the dataset.
+    :return: A FoldModel object and a list of dictionaries representing the dataset.
     """
     str_attrs = ["sn"]
     num_attrs = ["mcg", "gvh", "lip", "chg", "aac", "alm1", "alm2"]
     label, pos_val = "label", "cp"
-    model = Foldrpp(str_attrs, num_attrs, label, pos_val)
+    model = FoldModel(str_attrs, num_attrs, label, pos_val)
     data = model.load_data("data/ecoli.csv")
     print("\n% ecoli dataset", len(data), len(str_attrs + num_attrs) + 1)
     return model, data
@@ -255,12 +255,12 @@ def student_depression():
 
     The dataset contains 27902 instances.
 
-    :return: A Foldrpp object and a list of dictionaries representing the dataset.
+    :return: A FoldModel object and a list of dictionaries representing the dataset.
     """
     str_attrs = ["gender", "city", "sleep_duration", "dietary_habits", "degree", "have_you_ever_had_suicidal_thoughts", "family_history_of_mental_illness"]
     num_attrs = ["age", "academic_pressure", "work_pressure", "cgpa", "study_satisfaction", "job_satisfaction", "work_study_hours", "financial_stress"]
     label, pos_val = "depression", "1"
-    model = Foldrpp(str_attrs, num_attrs, label, pos_val)
+    model = FoldModel(str_attrs, num_attrs, label, pos_val)
     data = model.load_data("data/student_depression.csv")
     print("\n% student depression dataset", len(data), len(str_attrs + num_attrs) + 1)
     return model, data

@@ -1,17 +1,16 @@
 import configparser
 import json
 import requests
-import os
 import pandas as pd
 
-from foldrpp import Foldrpp
+from fold_model import FoldModel
 
 
 # reads config
 config = configparser.ConfigParser()
 config.read("config.ini")
 
-def generate_model(model: Foldrpp, train_dict, dataset_name) -> Foldrpp:
+def generate_model(model: FoldModel, train_dict, dataset_name) -> FoldModel:
     train_df = pd.DataFrame.from_dict(train_dict)
     print("generating model for dataset " + dataset_name + "..")
     
@@ -50,7 +49,7 @@ def generate_model(model: Foldrpp, train_dict, dataset_name) -> Foldrpp:
         print(e)
     return model
 
-def predict_with_model(model: Foldrpp, test_dict)  -> list[bool]:
+def predict_with_model(model: FoldModel, test_dict)  -> list[bool]:
     print('predict with foldse...')
     test_df = pd.DataFrame.from_dict(test_dict)
     test_data_frame_json = test_df.to_json(orient='split', index=True)

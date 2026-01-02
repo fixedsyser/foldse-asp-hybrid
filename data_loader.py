@@ -1,10 +1,10 @@
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
-from foldrpp import Foldrpp
+from fold_model import FoldModel
 from datasets import heart, autism, breastw, ecoli, kidney, student_depression
 
 
-def load_dataset(name:str) -> tuple[Foldrpp, list]:
+def load_dataset(name:str) -> tuple[FoldModel, list]:
     """
     Load a dataset from a given name.
 
@@ -15,8 +15,8 @@ def load_dataset(name:str) -> tuple[Foldrpp, list]:
 
     Returns
     -------
-    model : Foldrpp
-        A Foldrpp model.
+    model : FoldModel
+        A Fold-SE model.
     data : list
         A list of tuples containing the data points and their labels.
     """

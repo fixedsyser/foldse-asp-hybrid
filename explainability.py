@@ -58,7 +58,7 @@ def get_explanations(model_foldse, data_test, y_pred_ml, y_pred_hybrid, y_true):
             {
                 "instance": instance,
                 "ml_prediction": ml_pred,
-                "foldrpp_prediction": fold_pred,
+                "foldse_prediction": fold_pred,
                 "hybrid_prediction": hybrid_pred,
                 "true_label": true_label,
                 "status": status,
@@ -74,7 +74,7 @@ def rank_rules_by_contribution(model_foldse, data_test, y_pred_ml, y_pred_hybrid
 
     Parameters
     ----------
-    model_foldse: Foldrpp
+    model_foldse: FoldModel
         The FOLD-SE model
     data_test: list
         The test data

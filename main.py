@@ -5,7 +5,7 @@ from scipy.stats import ttest_rel
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 from data_loader import load_dataset, preprocess_data_for_ml
-from foldse import generate_model, predict_with_model
+from foldse_api import generate_model, predict_with_model
 from ml_models import get_ml_models
 from hybrid_model import create_hybrid_predictions
 from explainability import (

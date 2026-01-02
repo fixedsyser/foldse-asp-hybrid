@@ -1,5 +1,5 @@
 def create_hybrid_predictions(
-    y_true, y_pred_ml, y_pred_foldrpp, ml_confidences, confidence_threshold=0.6
+    y_true, y_pred_ml, y_pred_foldse, ml_confidences, confidence_threshold=0.6
 ):
 
     """
@@ -11,7 +11,7 @@ def create_hybrid_predictions(
         The ground truth target values.
     y_pred_ml : array-like
         The predictions made by the ML model.
-    y_pred_foldrpp : array-like
+    y_pred_foldse : array-like
         The predictions made by the FOLD-SE model.
     ml_confidences : array-like
         The confidence scores associated with the ML model's predictions.
@@ -25,7 +25,7 @@ def create_hybrid_predictions(
     """
     y_pred_hybrid = []
     for idx in range(len(y_true)):
-        fold_pred = y_pred_foldrpp[idx]
+        fold_pred = y_pred_foldse[idx]
         ml_pred = y_pred_ml[idx]
         ml_confidence = ml_confidences[idx][ml_pred]
 
