@@ -19,13 +19,13 @@ from explainability import (
 def main():
     """
     Runs multiple experiments on different datasets to evaluate the performance
-    of ML models, pure FOLD-R++ models, and hybrid models that combine predictions
+    of ML models, pure FOLD-SE models, and hybrid models that combine predictions
     from both. For each dataset, it performs the following steps:
 
     1. Loads and preprocesses data for ML model training.
     2. Splits the data into train and test sets for multiple experiments.
-    3. Trains FOLD-R++ model and makes predictions using ASP.
-    4. Evaluates the pure FOLD-R++ predictions.
+    3. Trains FOLD-SE model and makes predictions using ASP.
+    4. Evaluates the pure FOLD-SE predictions.
     5. Trains baseline ML models and makes predictions.
     6. Combines predictions to create hybrid model predictions.
     7. Evaluates and records accuracy, precision, recall, and F1 scores for
@@ -39,10 +39,11 @@ def main():
     # be aware that big datasets like student_depression may take some time
     datasets = ["heart", "autism", "breastw", "ecoli", "kidney", "student_depression"]
     results = []
+    time_holder = []
 
     for dataset_name in datasets:
         print(f"\nProcessing dataset: {dataset_name}")
-        model_foldrpp, data = load_dataset(dataset_name)
+        model_foldse, data = load_dataset(dataset_name)
         df, _ = preprocess_data_for_ml(data)
 
         X = df.drop("label", axis=1)
@@ -55,6 +56,7 @@ def main():
         asp_programs = {}
         important_rules = {}
         explanations_list = {}
+        exp_time_counter = []
 
         for exp_num in range(num_experiments):
             start_timer = time.perf_counter_ns()
@@ -75,43 +77,41 @@ def main():
             data_train = [data[i] for i in train_indices]
             data_test = [data[i] for i in test_indices]
 
-            model_foldrpp.reset()
-            model_foldrpp = generate_model(model_foldrpp, data_train, dataset_name)
-            model_foldrpp.asp()
+            model_foldse.reset()
+            model_foldse = generate_model(model_foldse, data_train, dataset_name)
+            model_foldse.asp()
 
-            y_pred_foldrpp = predict_with_model(
-                model_foldrpp, data_test
+            y_pred_foldse = predict_with_model(
+                model_foldse, data_test
             )
-            asp_program = model_foldrpp._asp
+            asp_program = model_foldse._asp
             
             y_true = [x["label"] for x in data_test]
 
-            acc_foldrpp = accuracy_score(y_true, y_pred_foldrpp)
-            p_foldrpp = precision_score(y_true, y_pred_foldrpp, zero_division=0)
-            r_foldrpp = recall_score(y_true, y_pred_foldrpp, zero_division=0)
-            f1_foldrpp = f1_score(y_true, y_pred_foldrpp, zero_division=0)
-            foldse_duration_ms = (time.perf_counter_ns() - start_timer) // 1000000
+            acc_foldse = accuracy_score(y_true, y_pred_foldse)
+            p_foldse = precision_score(y_true, y_pred_foldse, zero_division=0)
+            r_foldse = recall_score(y_true, y_pred_foldse, zero_division=0)
+            f1_foldse = f1_score(y_true, y_pred_foldse, zero_division=0)
 
-            # Record the pure FOLD-R++ results separately.
-            pure_foldrpp_result = {
+            # Record the pure FOLD-SE results separately.
+            pure_foldse_result = {
                 "Dataset": dataset_name,
                 "Experiment": exp_num,
-                "Model": "FOLD-R++ Pure",
+                "Model": "FOLD-SE Pure",
                 "ML Accuracy": np.nan,
-                "FOLD-R++ Accuracy": acc_foldrpp,
+                "FOLD-SE Accuracy": acc_foldse,
                 "Hybrid Accuracy": np.nan,
                 "ML Precision": np.nan,
-                "FOLD-R++ Precision": p_foldrpp,
+                "FOLD-SE Precision": p_foldse,
                 "Hybrid Precision": np.nan,
                 "ML Recall": np.nan,
-                "FOLD-R++ Recall": r_foldrpp,
+                "FOLD-SE Recall": r_foldse,
                 "Hybrid Recall": np.nan,
                 "ML F1 Score": np.nan,
-                "FOLD-R++ F1 Score": f1_foldrpp,
+                "FOLD-SE F1 Score": f1_foldse,
                 "Hybrid F1 Score": np.nan,
-                "Time (ms)": foldse_duration_ms
             }
-            all_experiments_results.append(pure_foldrpp_result)
+            all_experiments_results.append(pure_foldse_result)
 
             models = get_ml_models(random_state=random_state)
             for model_name, ml_model in models.items():
@@ -127,7 +127,7 @@ def main():
                         ml_confidences = np.full((len(X_test_ml), 2), 0.5)
 
                 y_pred_hybrid = create_hybrid_predictions(
-                    y_true, y_pred_ml, y_pred_foldrpp, ml_confidences
+                    y_true, y_pred_ml, y_pred_foldse, ml_confidences
                 )
                 acc_ml = accuracy_score(y_true, y_pred_ml)
                 p_ml = precision_score(y_true, y_pred_ml, zero_division=0)
@@ -138,27 +138,23 @@ def main():
                 p_hybrid = precision_score(y_true, y_pred_hybrid, zero_division=0)
                 r_hybrid = recall_score(y_true, y_pred_hybrid, zero_division=0)
                 f1_hybrid = f1_score(y_true, y_pred_hybrid, zero_division=0)
-                
-                end_duration = time.perf_counter_ns() - start_timer
-                end_duration_ms = end_duration // 1000000
 
                 experiment_results = {
                     "Dataset": dataset_name,
                     "Experiment": exp_num,
                     "Model": model_name,
                     "ML Accuracy": acc_ml,
-                    "FOLD-R++ Accuracy": acc_foldrpp,
+                    "FOLD-R++ Accuracy": acc_foldse,
                     "Hybrid Accuracy": acc_hybrid,
                     "ML Precision": p_ml,
-                    "FOLD-R++ Precision": p_foldrpp,
+                    "FOLD-R++ Precision": p_foldse,
                     "Hybrid Precision": p_hybrid,
                     "ML Recall": r_ml,
-                    "FOLD-R++ Recall": r_foldrpp,
+                    "FOLD-R++ Recall": r_foldse,
                     "Hybrid Recall": r_hybrid,
                     "ML F1 Score": f1_ml,
-                    "FOLD-R++ F1 Score": f1_foldrpp,
+                    "FOLD-R++ F1 Score": f1_foldse,
                     "Hybrid F1 Score": f1_hybrid,
-                    "Time (ms)": end_duration_ms
                 }
                 all_experiments_results.append(experiment_results)
 
@@ -172,14 +168,14 @@ def main():
                     }
                 )
                 
-                if isinstance(model_foldrpp.flat_rules[0], dict):
-                    model_foldrpp.flat_rules = [
+                if isinstance(model_foldse.flat_rules[0], dict):
+                    model_foldse.flat_rules = [
                         (tuple(rule['head']), rule['main_items'], rule['ab_items']) 
-                        for rule in model_foldrpp.flat_rules
+                        for rule in model_foldse.flat_rules
                     ]
 
                 explanations = get_explanations(
-                    model_foldrpp, data_test, y_pred_ml, y_pred_hybrid, y_true
+                    model_foldse, data_test, y_pred_ml, y_pred_hybrid, y_true
                 )
 
                 if hasattr(ml_model, "classes_"):
@@ -198,7 +194,7 @@ def main():
                 save_explanations(explanations, dataset_name, model_name)
 
                 ranked_rules = rank_rules_by_contribution(
-                    model_foldrpp, data_test, y_pred_ml, y_pred_hybrid
+                    model_foldse, data_test, y_pred_ml, y_pred_hybrid
                 )
                 asp_programs.setdefault((model_name), []).append((exp_num, asp_program))
                 important_rules.setdefault((model_name), []).append(
@@ -207,22 +203,23 @@ def main():
                 explanations_list.setdefault((model_name), []).append(
                     (exp_num, explanations)
                 )
+            exp_time_ms = (time.perf_counter_ns() - start_timer) // 1000000
+            exp_time_counter.append(exp_time_ms)
 
         df_results = pd.DataFrame(all_experiments_results)
         metrics = [
             "ML Accuracy",
-            "FOLD-R++ Accuracy",
+            "FOLD-SE Accuracy",
             "Hybrid Accuracy",
             "ML Precision",
-            "FOLD-R++ Precision",
+            "FOLD-SE Precision",
             "Hybrid Precision",
             "ML Recall",
-            "FOLD-R++ Recall",
+            "FOLD-SE Recall",
             "Hybrid Recall",
             "ML F1 Score",
-            "FOLD-R++ F1 Score",
+            "FOLD-SE F1 Score",
             "Hybrid F1 Score",
-            "Time (ms)",
         ]
 
         mean_results = df_results.groupby("Model")[metrics].mean().reset_index()
@@ -311,6 +308,16 @@ def main():
         stats_results_df.to_csv(
             "./results/statistical_tests_results.csv", mode="a", index=False
         )
+        
+        time_holder.append({
+            "dataset": dataset_name,
+            "mean time (ms)": sum(exp_time_counter) / len(exp_time_counter),
+        })
+     
+    # write mean times (ms) per dataset to file    
+    pd.DataFrame(time_holder).to_csv(
+        "./results/time_results.csv", index=False
+    ) 
 
     final_results_df = pd.concat(results, ignore_index=True)
     print("\nFinal Results with Mean and Standard Deviation:")

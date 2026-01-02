@@ -540,7 +540,7 @@ def proof_tree(rules, x, rule_head):
     return [_decode_rule(r) for r in rules if r[0] == rule_head]
 
 class Foldrpp:
-    def __init__(self, str_attrs=None, num_attrs=None, label=None, pos_val=None):
+    def __init__(self, str_attrs, num_attrs, label, pos_val):
         self.str_attrs = str_attrs
         self.num_attrs = num_attrs
         self.label = label

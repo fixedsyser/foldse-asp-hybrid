@@ -2,7 +2,7 @@ import numpy as np
 import json
 
 
-def get_explanations(model_foldrpp, data_test, y_pred_ml, y_pred_hybrid, y_true):
+def get_explanations(model_foldse, data_test, y_pred_ml, y_pred_hybrid, y_true):
     """
     Get explanations for each instance in the test set, indicating whether
     the hybrid model's prediction led to an improvement, no change, or made
@@ -10,8 +10,8 @@ def get_explanations(model_foldrpp, data_test, y_pred_ml, y_pred_hybrid, y_true)
 
     Parameters
     ----------
-    model_foldrpp: Foldrpp
-        The FOLD-R++ model.
+    model_foldse: Fold
+        The FOLD-SE model.
     data_test: list
         The test data.
     y_pred_ml: array-like
@@ -25,7 +25,7 @@ def get_explanations(model_foldrpp, data_test, y_pred_ml, y_pred_hybrid, y_true)
     -------
     list
         A list of dictionaries where each dictionary contains the instance,
-        the prediction of the ML model, the prediction of the FOLD-R++ model,
+        the prediction of the ML model, the prediction of the FOLD-SE model,
         the prediction of the hybrid model, a status flag indicating whether
         the hybrid prediction was an improvement, no change, or worse, and
         the explanation (proof tree).
@@ -34,7 +34,7 @@ def get_explanations(model_foldrpp, data_test, y_pred_ml, y_pred_hybrid, y_true)
     for idx, x in enumerate(data_test):
         ml_pred = int(y_pred_ml[idx])
         hybrid_pred = int(y_pred_hybrid[idx])
-        fold_pred = int(model_foldrpp.classify(x))
+        fold_pred = int(model_foldse.classify(x))
         true_label = int(y_true[idx])
 
         # Determine status based on comparison with the ground truth
@@ -53,7 +53,7 @@ def get_explanations(model_foldrpp, data_test, y_pred_ml, y_pred_hybrid, y_true)
             k: (v.item() if isinstance(v, np.generic) else v) for k, v in x.items()
         }
         # Generate proof tree and convert to string
-        proof_tree = str(model_foldrpp.proof_trees(x))
+        proof_tree = str(model_foldse.proof_trees(x))
         explanations.append(
             {
                 "instance": instance,
@@ -68,14 +68,14 @@ def get_explanations(model_foldrpp, data_test, y_pred_ml, y_pred_hybrid, y_true)
     return explanations
 
 
-def rank_rules_by_contribution(model_foldrpp, data_test, y_pred_ml, y_pred_hybrid):
+def rank_rules_by_contribution(model_foldse, data_test, y_pred_ml, y_pred_hybrid):
     """
     Rank rules by the number of times they contributed to corrections of the ML model.
 
     Parameters
     ----------
-    model_foldrpp: Foldrpp
-        The FOLD-R++ model
+    model_foldse: Foldrpp
+        The FOLD-SE model
     data_test: list
         The test data
     y_pred_ml: list
@@ -93,7 +93,7 @@ def rank_rules_by_contribution(model_foldrpp, data_test, y_pred_ml, y_pred_hybri
         ml_pred = y_pred_ml[idx]
         hybrid_pred = y_pred_hybrid[idx]
         if hybrid_pred != ml_pred:
-            proofs = model_foldrpp.proof_rules(x)
+            proofs = model_foldse.proof_rules(x)
             for rule in proofs:
                 rule_str = str(rule)
                 if rule_str not in rule_contributions:

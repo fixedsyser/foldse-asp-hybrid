@@ -3,7 +3,7 @@ def create_hybrid_predictions(
 ):
 
     """
-    Create hybrid predictions by combining predictions from ML and FOLD-R++ models based on confidence threshold.
+    Create hybrid predictions by combining predictions from ML and FOLD-SE models based on confidence threshold.
 
     Parameters
     ----------
@@ -12,16 +12,16 @@ def create_hybrid_predictions(
     y_pred_ml : array-like
         The predictions made by the ML model.
     y_pred_foldrpp : array-like
-        The predictions made by the FOLD-R++ model.
+        The predictions made by the FOLD-SE model.
     ml_confidences : array-like
         The confidence scores associated with the ML model's predictions.
     confidence_threshold : float, optional
-        The threshold below which the FOLD-R++ model's prediction is used instead of the ML model's prediction.
+        The threshold below which the FOLD-SE model's prediction is used instead of the ML model's prediction.
 
     Returns
     -------
     y_pred_hybrid : list
-        The list of hybrid predictions combining ML and FOLD-R++ model predictions.
+        The list of hybrid predictions combining ML and FOLD-SE model predictions.
     """
     y_pred_hybrid = []
     for idx in range(len(y_true)):
