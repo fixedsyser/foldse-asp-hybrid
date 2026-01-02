@@ -13,7 +13,7 @@ config.read("config.ini")
 
 def generate_model(model: Foldrpp, train_dict, dataset_name) -> Foldrpp:
     train_df = pd.DataFrame.from_dict(train_dict)
-    print("model for dataset " + dataset_name + " not found, generating..")
+    print("generating model for dataset " + dataset_name + "..")
     
     data_frame_json = train_df.to_json(orient='split', index=True)
 
@@ -74,12 +74,6 @@ def predict_with_model(model: Foldrpp, test_dict)  -> list[bool]:
         response = response.json()
         for response_obj in response:
             try:
-                print("from foldse api:")
-                print("accuracy", response_obj['accuracy'])
-                print('f1_score', response_obj['f1_score'])
-                print('precision', response_obj['precision'])
-                print('recall', response_obj['recall'])
-                print("-------------------")
                 if(response_obj['error']==None):
                     return response_obj['test_results']
                 else:

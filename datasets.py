@@ -259,7 +259,7 @@ def student_depression():
     """
     str_attrs = ["gender", "city", "sleep_duration", "dietary_habits", "degree", "have_you_ever_had_suicidal_thoughts", "family_history_of_mental_illness"]
     num_attrs = ["age", "academic_pressure", "work_pressure", "cgpa", "study_satisfaction", "job_satisfaction", "work_study_hours", "financial_stress"]
-    label, pos_val = "depression", "0"
+    label, pos_val = "depression", "1"
     model = Foldrpp(str_attrs, num_attrs, label, pos_val)
     data = model.load_data("data/student_depression.csv")
     print("\n% student depression dataset", len(data), len(str_attrs + num_attrs) + 1)
