@@ -1,0 +1,21 @@
+Rule used 1 times:
+{'sn': 'AGP', 'alm1': 0.54, 'gvh': 0.49, 'mcg': 0.74, 'alm2': 0.36}
+
+Rule used 1 times:
+[F]ab1(X,'True') :- not [F]sn(X,'PTKB'), gvh(X,N1), [F]N1!=<0.56, mcg(X,N2), [F]N2!=<0.41.
+
+Rule used 1 times:
+[F]ab2(X,'True') :- not [F]sn(X,'PTWX'), alm1(X,N3), [F]N3!=<0.36, alm2(X,N4), [F]N4=<0.35.
+
+Rule used 1 times:
+[F]ab3(X,'True') :- alm2(X,N4), [F]N4!=<0.47, alm1(X,N3), [F]N3=<0.4.
+
+Rule used 1 times:
+[T]label(X,'1') :- not [F]sn(X,'AAS'), alm1(X,N3), [T]N3=<0.55, not [U]ab1(X,'True'), not [U]ab2(X,'True'), not [U]ab3(X,'True').
+
+Rule used 1 times:
+{'sn': 'SECF', 'alm1': 0.72, 'gvh': 0.5, 'mcg': 0.11, 'alm2': 0.68}
+
+Rule used 1 times:
+[F]label(X,'1') :- not [F]sn(X,'AAS'), alm1(X,N1), [F]N1=<0.55, not [U]ab1(X,'True'), not [U]ab2(X,'True'), not [U]ab3(X,'True').
+

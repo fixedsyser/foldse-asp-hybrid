@@ -1,0 +1,75 @@
+Rule used 5 times:
+[F]label(X,'1') :- not [T]a5(X,'1'), not [U]ab2(X,'True').
+
+Rule used 4 times:
+[F]label(X,'1') :- not [T]a9(X,'1'), not [U]ab4(X,'True'), not [U]ab6(X,'True'), not [U]ab7(X,'True').
+
+Rule used 4 times:
+[F]label(X,'1') :- not [T]a4(X,'1'), not [T]a1(X,'1').
+
+Rule used 2 times:
+[F]label(X,'1') :- not [F]a6(X,'1'), not [T]a4(X,'1'), not [T]a3(X,'1').
+
+Rule used 2 times:
+[F]label(X,'1') :- not [T]a10(X,'1'), not [T]a1(X,'1').
+
+Rule used 2 times:
+[F]label(X,'1') :- not [F]a10(X,'1'), not [T]a1(X,'1').
+
+Rule used 2 times:
+[F]label(X,'1') :- not [F]a6(X,'1'), not [T]a4(X,'1'), not [F]a3(X,'1').
+
+Rule used 1 times:
+{'a5': '1', 'a9': '1', 'a4': '1', 'a1': '1', 'a6': '0', 'a3': '1', 'a10': '1', 'age': 21.0, 'a8': '0', 'ethnicity': 'middleeastern', 'gender': 'm', 'a7': '0', 'a2': '0'}
+
+Rule used 1 times:
+{'a5': '1', 'a9': '0', 'a4': '1', 'a1': '1', 'a6': '0', 'a3': '1', 'a10': '0', 'age': 27.0, 'a8': '1', 'ethnicity': 'Latino', 'gender': 'm', 'a7': '0', 'a2': '1'}
+
+Rule used 1 times:
+[F]ab3(X,'True') :- not [F]gender(X,'f'), not [F]a7(X,'1'), not [T]a3(X,'1').
+
+Rule used 1 times:
+[T]ab4(X,'True') :- [T]a4(X,'1'), [T]a8(X,'1'), [T]a2(X,'1'), not [U]ab3(X,'True').
+
+Rule used 1 times:
+[F]label(X,'1') :- not [F]a9(X,'1'), not [U]ab4(X,'True'), not [U]ab6(X,'True'), not [U]ab7(X,'True').
+
+Rule used 1 times:
+{'a5': '1', 'a9': '1', 'a4': '1', 'a1': '1', 'a6': '0', 'a3': '0', 'a10': '1', 'age': 22.0, 'a8': '1', 'ethnicity': 'Asian', 'gender': 'm', 'a7': '1', 'a2': '0'}
+
+Rule used 1 times:
+{'a5': '1', 'a9': '1', 'a4': '0', 'a1': '0', 'a6': '1', 'a3': '1', 'a10': '1', 'age': 32.0, 'a8': '0', 'ethnicity': 'Black', 'gender': 'f', 'a7': '1', 'a2': '1'}
+
+Rule used 1 times:
+[T]label(X,'1') :- not [F]a4(X,'1'), not [F]a1(X,'1').
+
+Rule used 1 times:
+{'a5': '1', 'a9': '1', 'a4': '1', 'a1': '0', 'a6': '1', 'a3': '0', 'a10': '1', 'age': 32.0, 'a8': '0', 'ethnicity': '?', 'gender': 'f', 'a7': '1', 'a2': '0'}
+
+Rule used 1 times:
+[F]label(X,'1') :- not [T]a4(X,'1'), not [F]a1(X,'1').
+
+Rule used 1 times:
+[F]label(X,'1') :- not [T]a6(X,'1'), not [T]a4(X,'1'), not [F]a3(X,'1').
+
+Rule used 1 times:
+[F]label(X,'1') :- not [T]a10(X,'1'), not [F]a1(X,'1').
+
+Rule used 1 times:
+{'a5': '1', 'a9': '0', 'a4': '0', 'a1': '1', 'a6': '1', 'a3': '1', 'a10': '0', 'age': 21.0, 'a8': '1', 'ethnicity': 'Hispanic', 'gender': 'm', 'a7': '1', 'a2': '0'}
+
+Rule used 1 times:
+[F]ab4(X,'True') :- [F]a4(X,'1'), [T]a8(X,'1'), [F]a2(X,'1'), not [U]ab3(X,'True').
+
+Rule used 1 times:
+[F]ab6(X,'True') :- [T]a7(X,'1'), [F]a10(X,'1'), [T]a6(X,'1'), not [U]ab5(X,'True').
+
+Rule used 1 times:
+[F]ab7(X,'True') :- [T]a3(X,'1'), [T]a7(X,'1'), [T]a8(X,'1'), age(X,N1), [F]N1=<20.0.
+
+Rule used 1 times:
+[T]label(X,'1') :- not [F]a9(X,'1'), not [U]ab4(X,'True'), not [U]ab6(X,'True'), not [U]ab7(X,'True').
+
+Rule used 1 times:
+{'a5': '1', 'a9': '1', 'a4': '1', 'a1': '1', 'a6': '0', 'a3': '0', 'a10': '0', 'age': 19.0, 'a8': '1', 'ethnicity': 'white', 'gender': 'm', 'a7': '0', 'a2': '0'}
+

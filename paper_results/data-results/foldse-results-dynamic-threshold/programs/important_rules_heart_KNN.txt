@@ -1,0 +1,75 @@
+Rule used 8 times:
+[T]label(X,'1') :- not [F]chest_pain(X,'4'), not [U]ab1(X,'True'), not [U]ab2(X,'True'), not [U]ab3(X,'True').
+
+Rule used 5 times:
+[F]ab1(X,'True') :- not [T]thal(X,'3'), maximum_heart_rate_achieved(X,N1), [F]N1=<131.0.
+
+Rule used 5 times:
+[F]ab2(X,'True') :- [F]sex(X,'1'), [F]slope(X,'2'), [F]major_vessels(X,'1'), blood_pressure(X,N2), [F]N2!=<118.0, maximum_heart_rate_achieved(X,N1), [F]N1!=<132.0.
+
+Rule used 3 times:
+[F]label(X,'1') :- not [T]chest_pain(X,'4'), not [U]ab1(X,'True'), not [U]ab2(X,'True'), not [U]ab3(X,'True').
+
+Rule used 3 times:
+[F]ab3(X,'True') :- not [F]sex(X,'1'), [F]major_vessels(X,'2'), [F]fasting_blood_sugar(X,'1').
+
+Rule used 3 times:
+[F]ab3(X,'True') :- not [F]sex(X,'1'), [F]major_vessels(X,'2'), [T]fasting_blood_sugar(X,'1').
+
+Rule used 2 times:
+[F]label(X,'1') :- not [T]thal(X,'7'), [T]major_vessels(X,'0'), [T]chest_pain(X,'4'), maximum_heart_rate_achieved(X,N1), [F]N1!=<117.0, not [U]ab4(X,'True').
+
+Rule used 2 times:
+[F]ab1(X,'True') :- not [F]thal(X,'3'), maximum_heart_rate_achieved(X,N1), [F]N1=<131.0.
+
+Rule used 2 times:
+[F]ab3(X,'True') :- not [T]sex(X,'1'), [F]major_vessels(X,'2'), [F]fasting_blood_sugar(X,'1').
+
+Rule used 1 times:
+{'chest_pain': '4', 'thal': '7', 'major_vessels': '0', 'maximum_heart_rate_achieved': 140.0, 'sex': '1', 'slope': '1', 'blood_pressure': 120.0, 'fasting_blood_sugar': '0', 'serum_cholestoral': 177.0}
+
+Rule used 1 times:
+{'chest_pain': '4', 'thal': '3', 'major_vessels': '1', 'maximum_heart_rate_achieved': 132.0, 'sex': '1', 'slope': '1', 'blood_pressure': 112.0, 'fasting_blood_sugar': '0', 'serum_cholestoral': 212.0}
+
+Rule used 1 times:
+[F]label(X,'1') :- not [F]thal(X,'7'), [F]major_vessels(X,'0'), [T]chest_pain(X,'4'), maximum_heart_rate_achieved(X,N1), [F]N1!=<117.0, not [U]ab4(X,'True').
+
+Rule used 1 times:
+{'chest_pain': '3', 'thal': '3', 'major_vessels': '0', 'maximum_heart_rate_achieved': 151.0, 'sex': '0', 'slope': '1', 'blood_pressure': 160.0, 'fasting_blood_sugar': '0', 'serum_cholestoral': 360.0}
+
+Rule used 1 times:
+{'chest_pain': '4', 'thal': '7', 'major_vessels': '0', 'maximum_heart_rate_achieved': 128.0, 'sex': '1', 'slope': '2', 'blood_pressure': 150.0, 'fasting_blood_sugar': '0', 'serum_cholestoral': 243.0}
+
+Rule used 1 times:
+{'chest_pain': '3', 'thal': '7', 'major_vessels': '1', 'maximum_heart_rate_achieved': 165.0, 'sex': '1', 'slope': '2', 'blood_pressure': 112.0, 'fasting_blood_sugar': '0', 'serum_cholestoral': 230.0}
+
+Rule used 1 times:
+[F]ab2(X,'True') :- [T]sex(X,'1'), [T]slope(X,'2'), [T]major_vessels(X,'1'), blood_pressure(X,N2), [F]N2!=<118.0, maximum_heart_rate_achieved(X,N1), [F]N1!=<132.0.
+
+Rule used 1 times:
+{'chest_pain': '3', 'thal': '3', 'major_vessels': '0', 'maximum_heart_rate_achieved': 167.0, 'sex': '0', 'slope': '1', 'blood_pressure': 108.0, 'fasting_blood_sugar': '0', 'serum_cholestoral': 267.0}
+
+Rule used 1 times:
+{'chest_pain': '1', 'thal': '7', 'major_vessels': '0', 'maximum_heart_rate_achieved': 159.0, 'sex': '1', 'slope': '2', 'blood_pressure': 170.0, 'fasting_blood_sugar': '0', 'serum_cholestoral': 288.0}
+
+Rule used 1 times:
+[F]ab2(X,'True') :- [T]sex(X,'1'), [T]slope(X,'2'), [F]major_vessels(X,'1'), blood_pressure(X,N2), [F]N2!=<118.0, maximum_heart_rate_achieved(X,N1), [F]N1!=<132.0.
+
+Rule used 1 times:
+{'chest_pain': '3', 'thal': '3', 'major_vessels': '0', 'maximum_heart_rate_achieved': 139.0, 'sex': '0', 'slope': '1', 'blood_pressure': 130.0, 'fasting_blood_sugar': '0', 'serum_cholestoral': 275.0}
+
+Rule used 1 times:
+{'chest_pain': '3', 'thal': '3', 'major_vessels': '0', 'maximum_heart_rate_achieved': 96.0, 'sex': '0', 'slope': '1', 'blood_pressure': 120.0, 'fasting_blood_sugar': '1', 'serum_cholestoral': 178.0}
+
+Rule used 1 times:
+[F]ab1(X,'True') :- not [T]thal(X,'3'), maximum_heart_rate_achieved(X,N1), [T]N1=<131.0.
+
+Rule used 1 times:
+{'chest_pain': '3', 'thal': '3', 'major_vessels': '1', 'maximum_heart_rate_achieved': 157.0, 'sex': '0', 'slope': '1', 'blood_pressure': 140.0, 'fasting_blood_sugar': '1', 'serum_cholestoral': 417.0}
+
+Rule used 1 times:
+[F]ab2(X,'True') :- [F]sex(X,'1'), [F]slope(X,'2'), [T]major_vessels(X,'1'), blood_pressure(X,N2), [F]N2!=<118.0, maximum_heart_rate_achieved(X,N1), [F]N1!=<132.0.
+
+Rule used 1 times:
+{'chest_pain': '3', 'thal': '3', 'major_vessels': '0', 'maximum_heart_rate_achieved': 170.0, 'sex': '0', 'slope': '1', 'blood_pressure': 135.0, 'fasting_blood_sugar': '1', 'serum_cholestoral': 304.0}
+

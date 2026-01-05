@@ -1,0 +1,30 @@
+Dataset,Model,t-statistic,p-value
+kidney,Random Forest,-0.9999999999999998,0.34343639613791366
+kidney,SVM,3.8806450418189513,0.003727734728307988
+kidney,KNN,,
+kidney,Neural Network,0.6882472016116836,0.5086464915963456
+Dataset,Model,t-statistic,p-value
+breastw,Random Forest,-2.5384615384615423,0.03179092810435826
+breastw,SVM,0.8017837257372598,0.4433318501696675
+breastw,KNN,,
+breastw,Neural Network,3.0869745325651543,0.012992786487757474
+Dataset,Model,t-statistic,p-value
+ecoli,Random Forest,0.3611575592573123,0.7263142108887226
+ecoli,SVM,8.78923983535972,1.0360109508356485e-05
+ecoli,KNN,,
+ecoli,Neural Network,2.7643280257527763,0.021956201836446008
+Dataset,Model,t-statistic,p-value
+heart,Random Forest,0.0,1.0
+heart,SVM,4.0796524798609575,0.002759448083301411
+heart,KNN,,
+heart,Neural Network,-0.5345224838248486,0.6059307686316777
+Dataset,Model,t-statistic,p-value
+autism,Random Forest,-3.0377373325002672,0.014069338269317617
+autism,SVM,32.117935764192715,1.3511631466394236e-10
+autism,KNN,,
+autism,Neural Network,1.0,0.34343639613791355
+Dataset,Model,t-statistic,p-value
+student_depression,Random Forest,-5.328940881779545,0.00047534747024195826
+student_depression,SVM,5.465943944999475,0.00039734629265054694
+student_depression,KNN,,
+student_depression,Neural Network,-3.14594703400753,0.011814367786234029

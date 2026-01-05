@@ -1,0 +1,669 @@
+Rule used 97 times:
+[T]label(X,'1') :- not [F]have_you_ever_had_suicidal_thoughts(X,'No'), not [U]ab1(X,'True'), not [U]ab2(X,'True'), not [U]ab3(X,'True').
+
+Rule used 76 times:
+[F]label(X,'1') :- not [T]have_you_ever_had_suicidal_thoughts(X,'No'), not [U]ab1(X,'True'), not [U]ab2(X,'True'), not [U]ab3(X,'True').
+
+Rule used 76 times:
+[F]label(X,'1') :- [T]have_you_ever_had_suicidal_thoughts(X,'No'), academic_pressure(X,N1), [F]N1!=<3.0, financial_stress(X,N2), [F]N2!=<4.0.
+
+Rule used 48 times:
+[F]ab1(X,'True') :- academic_pressure(X,N1), [T]N1=<2.0, financial_stress(X,N2), [F]N2=<2.0.
+
+Rule used 40 times:
+[F]ab1(X,'True') :- academic_pressure(X,N1), [F]N1=<2.0, financial_stress(X,N2), [T]N2=<2.0.
+
+Rule used 34 times:
+[F]ab3(X,'True') :- not [F]dietary_habits(X,'Unhealthy'), academic_pressure(X,N1), [F]N1=<1.0, financial_stress(X,N2), [F]N2>2.0, [T]N2=<4.0, age(X,N3), [T]N3=<33.0, study_satisfaction(X,N5), [F]N5!=<2.0.
+
+Rule used 31 times:
+[F]ab2(X,'True') :- academic_pressure(X,N1), [T]N1=<3.0, age(X,N3), [F]N3!=<29.0, financial_stress(X,N2), [T]N2=<3.0, work_study_hours(X,N4), [F]N4=<4.0.
+
+Rule used 24 times:
+[F]ab2(X,'True') :- academic_pressure(X,N1), [T]N1=<3.0, age(X,N3), [F]N3!=<29.0, financial_stress(X,N2), [T]N2=<3.0, work_study_hours(X,N4), [T]N4=<4.0.
+
+Rule used 21 times:
+[F]ab2(X,'True') :- academic_pressure(X,N1), [T]N1=<3.0, age(X,N3), [F]N3!=<29.0, financial_stress(X,N2), [F]N2=<3.0, work_study_hours(X,N4), [F]N4=<4.0.
+
+Rule used 21 times:
+[F]ab3(X,'True') :- not [F]dietary_habits(X,'Unhealthy'), academic_pressure(X,N1), [F]N1=<1.0, financial_stress(X,N2), [T]N2>2.0, [T]N2=<4.0, age(X,N3), [T]N3=<33.0, study_satisfaction(X,N5), [F]N5!=<2.0.
+
+Rule used 19 times:
+[T]ab1(X,'True') :- academic_pressure(X,N1), [T]N1=<2.0, financial_stress(X,N2), [T]N2=<2.0.
+
+Rule used 19 times:
+[F]label(X,'1') :- not [F]have_you_ever_had_suicidal_thoughts(X,'No'), not [U]ab1(X,'True'), not [U]ab2(X,'True'), not [U]ab3(X,'True').
+
+Rule used 19 times:
+[F]label(X,'1') :- [F]have_you_ever_had_suicidal_thoughts(X,'No'), academic_pressure(X,N1), [F]N1!=<3.0, financial_stress(X,N2), [F]N2!=<4.0.
+
+Rule used 14 times:
+[F]ab2(X,'True') :- academic_pressure(X,N1), [T]N1=<3.0, age(X,N3), [F]N3!=<29.0, financial_stress(X,N2), [F]N2=<3.0, work_study_hours(X,N4), [T]N4=<4.0.
+
+Rule used 12 times:
+[F]ab3(X,'True') :- not [F]dietary_habits(X,'Unhealthy'), academic_pressure(X,N1), [T]N1=<1.0, financial_stress(X,N2), [T]N2>2.0, [T]N2=<4.0, age(X,N3), [T]N3=<33.0, study_satisfaction(X,N5), [F]N5!=<2.0.
+
+Rule used 9 times:
+[F]ab1(X,'True') :- academic_pressure(X,N1), [F]N1=<2.0, financial_stress(X,N2), [F]N2=<2.0.
+
+Rule used 7 times:
+[F]ab3(X,'True') :- not [F]dietary_habits(X,'Unhealthy'), academic_pressure(X,N1), [T]N1=<1.0, financial_stress(X,N2), [T]N2>2.0, [F]N2=<4.0, age(X,N3), [T]N3=<33.0, study_satisfaction(X,N5), [F]N5!=<2.0.
+
+Rule used 4 times:
+[F]ab3(X,'True') :- not [T]dietary_habits(X,'Unhealthy'), academic_pressure(X,N1), [T]N1=<1.0, financial_stress(X,N2), [T]N2>2.0, [T]N2=<4.0, age(X,N3), [T]N3=<33.0, study_satisfaction(X,N5), [F]N5!=<2.0.
+
+Rule used 4 times:
+[F]ab3(X,'True') :- not [T]dietary_habits(X,'Unhealthy'), academic_pressure(X,N1), [T]N1=<1.0, financial_stress(X,N2), [T]N2>2.0, [F]N2=<4.0, age(X,N3), [T]N3=<33.0, study_satisfaction(X,N5), [F]N5!=<2.0.
+
+Rule used 4 times:
+[F]ab2(X,'True') :- academic_pressure(X,N1), [F]N1=<3.0, age(X,N3), [F]N3!=<29.0, financial_stress(X,N2), [T]N2=<3.0, work_study_hours(X,N4), [T]N4=<4.0.
+
+Rule used 3 times:
+[F]ab2(X,'True') :- academic_pressure(X,N1), [F]N1=<3.0, age(X,N3), [F]N3!=<29.0, financial_stress(X,N2), [T]N2=<3.0, work_study_hours(X,N4), [F]N4=<4.0.
+
+Rule used 3 times:
+[F]ab3(X,'True') :- not [F]dietary_habits(X,'Unhealthy'), academic_pressure(X,N1), [F]N1=<1.0, financial_stress(X,N2), [F]N2>2.0, [T]N2=<4.0, age(X,N3), [F]N3=<33.0, study_satisfaction(X,N5), [F]N5!=<2.0.
+
+Rule used 2 times:
+[F]ab3(X,'True') :- not [F]dietary_habits(X,'Unhealthy'), academic_pressure(X,N1), [F]N1=<1.0, financial_stress(X,N2), [T]N2>2.0, [T]N2=<4.0, age(X,N3), [F]N3=<33.0, study_satisfaction(X,N5), [F]N5!=<2.0.
+
+Rule used 2 times:
+[F]ab3(X,'True') :- not [T]dietary_habits(X,'Unhealthy'), academic_pressure(X,N1), [F]N1=<1.0, financial_stress(X,N2), [F]N2>2.0, [T]N2=<4.0, age(X,N3), [T]N3=<33.0, study_satisfaction(X,N5), [F]N5!=<2.0.
+
+Rule used 2 times:
+[F]ab3(X,'True') :- not [F]dietary_habits(X,'Unhealthy'), academic_pressure(X,N1), [F]N1=<1.0, financial_stress(X,N2), [T]N2>2.0, [F]N2=<4.0, age(X,N3), [T]N3=<33.0, study_satisfaction(X,N5), [F]N5!=<2.0.
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 1.0, 'age': 23.0, 'work_study_hours': 2.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 5.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 4.0, 'age': 29.0, 'work_study_hours': 6.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 4.0, 'financial_stress': 1.0, 'age': 33.0, 'work_study_hours': 12.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 5.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 0.0, 'financial_stress': 3.0, 'age': 21.0, 'work_study_hours': 3.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 0.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 3.0, 'financial_stress': 3.0, 'age': 25.0, 'work_study_hours': 12.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 2.0, 'age': 27.0, 'work_study_hours': 9.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 4.0, 'age': 29.0, 'work_study_hours': 4.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 4.0, 'financial_stress': 1.0, 'age': 34.0, 'work_study_hours': 6.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 1.0, 'age': 25.0, 'work_study_hours': 1.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 5.0, 'age': 21.0, 'work_study_hours': 0.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 3.0, 'financial_stress': 5.0, 'age': 25.0, 'work_study_hours': 12.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 5.0, 'financial_stress': 1.0, 'age': 22.0, 'work_study_hours': 10.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 3.0, 'financial_stress': 5.0, 'age': 27.0, 'work_study_hours': 4.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 2.0, 'financial_stress': 5.0, 'age': 22.0, 'work_study_hours': 12.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 3.0, 'age': 32.0, 'work_study_hours': 5.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 3.0, 'financial_stress': 4.0, 'age': 18.0, 'work_study_hours': 2.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 3.0, 'age': 27.0, 'work_study_hours': 4.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 3.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 3.0, 'financial_stress': 3.0, 'age': 18.0, 'work_study_hours': 8.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 2.0, 'age': 21.0, 'work_study_hours': 8.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 3.0, 'financial_stress': 3.0, 'age': 19.0, 'work_study_hours': 10.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 3.0, 'age': 34.0, 'work_study_hours': 5.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 5.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 3.0, 'financial_stress': 5.0, 'age': 24.0, 'work_study_hours': 11.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 2.0, 'age': 31.0, 'work_study_hours': 6.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 4.0, 'financial_stress': 2.0, 'age': 19.0, 'work_study_hours': 9.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 4.0, 'financial_stress': 4.0, 'age': 28.0, 'work_study_hours': 4.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 1.0, 'age': 30.0, 'work_study_hours': 11.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 3.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 3.0, 'age': 29.0, 'work_study_hours': 4.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 5.0, 'financial_stress': 2.0, 'age': 21.0, 'work_study_hours': 12.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 2.0, 'age': 27.0, 'work_study_hours': 7.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 1.0, 'age': 28.0, 'work_study_hours': 9.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 5.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 5.0, 'age': 32.0, 'work_study_hours': 0.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 4.0, 'age': 31.0, 'work_study_hours': 11.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 1.0, 'age': 24.0, 'work_study_hours': 4.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 5.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 1.0, 'age': 22.0, 'work_study_hours': 9.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 3.0, 'financial_stress': 4.0, 'age': 26.0, 'work_study_hours': 12.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 5.0, 'age': 34.0, 'work_study_hours': 9.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 5.0}
+
+Rule used 1 times:
+[F]ab3(X,'True') :- not [F]dietary_habits(X,'Unhealthy'), academic_pressure(X,N1), [F]N1=<1.0, financial_stress(X,N2), [T]N2>2.0, [F]N2=<4.0, age(X,N3), [F]N3=<33.0, study_satisfaction(X,N5), [F]N5!=<2.0.
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 4.0, 'financial_stress': 2.0, 'age': 22.0, 'work_study_hours': 12.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 5.0, 'financial_stress': 1.0, 'age': 25.0, 'work_study_hours': 11.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 3.0, 'age': 31.0, 'work_study_hours': 4.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 1.0, 'age': 34.0, 'work_study_hours': 10.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 3.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 2.0, 'age': 25.0, 'work_study_hours': 10.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 5.0, 'financial_stress': 3.0, 'age': 32.0, 'work_study_hours': 2.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 5.0, 'age': 29.0, 'work_study_hours': 0.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 3.0, 'financial_stress': 5.0, 'age': 25.0, 'work_study_hours': 6.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 3.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 5.0, 'age': 32.0, 'work_study_hours': 10.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 3.0, 'age': 34.0, 'work_study_hours': 3.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 3.0}
+
+Rule used 1 times:
+[F]ab3(X,'True') :- not [T]dietary_habits(X,'Unhealthy'), academic_pressure(X,N1), [F]N1=<1.0, financial_stress(X,N2), [T]N2>2.0, [T]N2=<4.0, age(X,N3), [F]N3=<33.0, study_satisfaction(X,N5), [F]N5!=<2.0.
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 4.0, 'age': 32.0, 'work_study_hours': 4.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 5.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 2.0, 'age': 22.0, 'work_study_hours': 11.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 3.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 4.0, 'financial_stress': 3.0, 'age': 24.0, 'work_study_hours': 7.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 5.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 1.0, 'age': 27.0, 'work_study_hours': 9.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 3.0, 'financial_stress': 2.0, 'age': 20.0, 'work_study_hours': 10.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 2.0, 'age': 24.0, 'work_study_hours': 12.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 2.0, 'financial_stress': 4.0, 'age': 21.0, 'work_study_hours': 12.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 2.0, 'age': 24.0, 'work_study_hours': 6.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 3.0, 'age': 29.0, 'work_study_hours': 2.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 3.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 4.0, 'financial_stress': 3.0, 'age': 34.0, 'work_study_hours': 9.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 5.0, 'financial_stress': 2.0, 'age': 32.0, 'work_study_hours': 0.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 5.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 1.0, 'age': 23.0, 'work_study_hours': 9.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 3.0, 'financial_stress': 3.0, 'age': 23.0, 'work_study_hours': 4.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 5.0, 'financial_stress': 3.0, 'age': 31.0, 'work_study_hours': 11.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 3.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 4.0, 'age': 22.0, 'work_study_hours': 2.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 5.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 2.0, 'financial_stress': 5.0, 'age': 20.0, 'work_study_hours': 6.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 5.0, 'age': 34.0, 'work_study_hours': 7.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 3.0}
+
+Rule used 1 times:
+[F]ab3(X,'True') :- not [T]dietary_habits(X,'Unhealthy'), academic_pressure(X,N1), [F]N1=<1.0, financial_stress(X,N2), [T]N2>2.0, [F]N2=<4.0, age(X,N3), [F]N3=<33.0, study_satisfaction(X,N5), [F]N5!=<2.0.
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 4.0, 'financial_stress': 5.0, 'age': 26.0, 'work_study_hours': 0.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 1.0, 'age': 19.0, 'work_study_hours': 7.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 3.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 2.0, 'age': 27.0, 'work_study_hours': 2.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 4.0, 'financial_stress': 1.0, 'age': 20.0, 'work_study_hours': 2.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 1.0, 'age': 29.0, 'work_study_hours': 10.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 4.0, 'age': 27.0, 'work_study_hours': 2.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 5.0, 'financial_stress': 4.0, 'age': 34.0, 'work_study_hours': 6.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 4.0, 'financial_stress': 1.0, 'age': 34.0, 'work_study_hours': 10.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 4.0, 'financial_stress': 3.0, 'age': 18.0, 'work_study_hours': 10.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 5.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 4.0, 'financial_stress': 4.0, 'age': 27.0, 'work_study_hours': 7.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 5.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 3.0, 'age': 19.0, 'work_study_hours': 6.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 2.0, 'financial_stress': 5.0, 'age': 21.0, 'work_study_hours': 12.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 5.0, 'financial_stress': 3.0, 'age': 28.0, 'work_study_hours': 8.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 5.0, 'financial_stress': 4.0, 'age': 31.0, 'work_study_hours': 12.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 3.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 2.0, 'age': 26.0, 'work_study_hours': 4.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 1.0, 'age': 33.0, 'work_study_hours': 8.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 2.0, 'age': 28.0, 'work_study_hours': 0.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 5.0, 'age': 26.0, 'work_study_hours': 3.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 5.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 3.0, 'age': 28.0, 'work_study_hours': 4.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 3.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 3.0, 'financial_stress': 4.0, 'age': 25.0, 'work_study_hours': 10.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 4.0, 'financial_stress': 4.0, 'age': 25.0, 'work_study_hours': 2.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 3.0, 'financial_stress': 1.0, 'age': 23.0, 'work_study_hours': 7.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 5.0, 'age': 21.0, 'work_study_hours': 3.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 5.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 4.0, 'age': 28.0, 'work_study_hours': 12.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 4.0, 'age': 26.0, 'work_study_hours': 10.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 3.0, 'age': 29.0, 'work_study_hours': 9.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 5.0, 'age': 30.0, 'work_study_hours': 11.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 4.0, 'age': 34.0, 'work_study_hours': 8.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 5.0, 'financial_stress': 4.0, 'age': 24.0, 'work_study_hours': 10.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 3.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 1.0, 'age': 32.0, 'work_study_hours': 7.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 3.0, 'age': 29.0, 'work_study_hours': 12.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 3.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 1.0, 'age': 31.0, 'work_study_hours': 12.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 5.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 1.0, 'age': 22.0, 'work_study_hours': 12.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 5.0, 'financial_stress': 3.0, 'age': 24.0, 'work_study_hours': 11.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 3.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 4.0, 'age': 23.0, 'work_study_hours': 10.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 4.0, 'age': 24.0, 'work_study_hours': 11.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 3.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 3.0, 'financial_stress': 5.0, 'age': 25.0, 'work_study_hours': 11.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 3.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 4.0, 'financial_stress': 1.0, 'age': 18.0, 'work_study_hours': 6.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 2.0, 'age': 34.0, 'work_study_hours': 12.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+[F]ab3(X,'True') :- not [T]dietary_habits(X,'Unhealthy'), academic_pressure(X,N1), [F]N1=<1.0, financial_stress(X,N2), [F]N2>2.0, [T]N2=<4.0, age(X,N3), [F]N3=<33.0, study_satisfaction(X,N5), [F]N5!=<2.0.
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 5.0, 'financial_stress': 2.0, 'age': 20.0, 'work_study_hours': 3.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 5.0, 'financial_stress': 1.0, 'age': 22.0, 'work_study_hours': 7.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 5.0, 'age': 28.0, 'work_study_hours': 1.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 5.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 3.0, 'financial_stress': 4.0, 'age': 32.0, 'work_study_hours': 11.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 1.0, 'age': 20.0, 'work_study_hours': 9.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 3.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 5.0, 'financial_stress': 2.0, 'age': 21.0, 'work_study_hours': 4.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 3.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 5.0, 'financial_stress': 2.0, 'age': 27.0, 'work_study_hours': 6.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 3.0, 'age': 23.0, 'work_study_hours': 6.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 5.0, 'age': 32.0, 'work_study_hours': 8.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 2.0, 'age': 22.0, 'work_study_hours': 0.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 5.0, 'financial_stress': 1.0, 'age': 26.0, 'work_study_hours': 11.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 1.0, 'age': 23.0, 'work_study_hours': 12.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 5.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 5.0, 'financial_stress': 2.0, 'age': 19.0, 'work_study_hours': 5.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 5.0, 'age': 31.0, 'work_study_hours': 6.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 3.0, 'age': 27.0, 'work_study_hours': 3.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 2.0, 'financial_stress': 5.0, 'age': 21.0, 'work_study_hours': 11.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 5.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 4.0, 'financial_stress': 4.0, 'age': 20.0, 'work_study_hours': 7.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 3.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 5.0, 'financial_stress': 5.0, 'age': 29.0, 'work_study_hours': 6.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 1.0, 'age': 25.0, 'work_study_hours': 8.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 3.0, 'age': 22.0, 'work_study_hours': 2.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 1.0, 'age': 30.0, 'work_study_hours': 10.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 2.0, 'age': 33.0, 'work_study_hours': 7.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 5.0, 'financial_stress': 5.0, 'age': 30.0, 'work_study_hours': 12.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 5.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 4.0, 'financial_stress': 4.0, 'age': 26.0, 'work_study_hours': 6.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 5.0, 'financial_stress': 3.0, 'age': 30.0, 'work_study_hours': 11.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 4.0, 'age': 32.0, 'work_study_hours': 8.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 3.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 4.0, 'age': 23.0, 'work_study_hours': 8.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 3.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 2.0, 'financial_stress': 4.0, 'age': 22.0, 'work_study_hours': 10.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 3.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 5.0, 'financial_stress': 3.0, 'age': 33.0, 'work_study_hours': 5.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 1.0, 'age': 27.0, 'work_study_hours': 7.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 5.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 5.0, 'financial_stress': 5.0, 'age': 29.0, 'work_study_hours': 1.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 3.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 1.0, 'age': 21.0, 'work_study_hours': 6.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 2.0, 'age': 29.0, 'work_study_hours': 8.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 3.0, 'age': 28.0, 'work_study_hours': 7.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 5.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 4.0, 'age': 25.0, 'work_study_hours': 2.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+[F]ab3(X,'True') :- not [T]dietary_habits(X,'Unhealthy'), academic_pressure(X,N1), [F]N1=<1.0, financial_stress(X,N2), [T]N2>2.0, [T]N2=<4.0, age(X,N3), [T]N3=<33.0, study_satisfaction(X,N5), [F]N5!=<2.0.
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 5.0, 'financial_stress': 2.0, 'age': 21.0, 'work_study_hours': 11.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 4.0, 'age': 27.0, 'work_study_hours': 7.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 5.0, 'financial_stress': 2.0, 'age': 23.0, 'work_study_hours': 6.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 2.0, 'age': 20.0, 'work_study_hours': 0.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 5.0, 'financial_stress': 3.0, 'age': 25.0, 'work_study_hours': 5.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 4.0, 'age': 32.0, 'work_study_hours': 6.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 5.0, 'financial_stress': 4.0, 'age': 26.0, 'work_study_hours': 9.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 5.0, 'age': 27.0, 'work_study_hours': 0.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 5.0, 'financial_stress': 3.0, 'age': 24.0, 'work_study_hours': 8.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 3.0, 'age': 22.0, 'work_study_hours': 1.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 2.0, 'age': 27.0, 'work_study_hours': 3.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 5.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 3.0, 'financial_stress': 5.0, 'age': 29.0, 'work_study_hours': 12.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 5.0, 'financial_stress': 3.0, 'age': 24.0, 'work_study_hours': 9.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 5.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 4.0, 'financial_stress': 4.0, 'age': 28.0, 'work_study_hours': 2.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 3.0, 'financial_stress': 5.0, 'age': 21.0, 'work_study_hours': 8.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 5.0, 'financial_stress': 1.0, 'age': 27.0, 'work_study_hours': 2.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 3.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 2.0, 'financial_stress': 5.0, 'age': 23.0, 'work_study_hours': 7.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 5.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 3.0, 'age': 34.0, 'work_study_hours': 12.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+[F]ab3(X,'True') :- not [F]dietary_habits(X,'Unhealthy'), academic_pressure(X,N1), [T]N1=<1.0, financial_stress(X,N2), [T]N2>2.0, [T]N2=<4.0, age(X,N3), [F]N3=<33.0, study_satisfaction(X,N5), [F]N5!=<2.0.
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 1.0, 'age': 21.0, 'work_study_hours': 2.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 1.0, 'age': 25.0, 'work_study_hours': 1.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 1.0, 'age': 22.0, 'work_study_hours': 6.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 5.0, 'financial_stress': 3.0, 'age': 21.0, 'work_study_hours': 1.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 5.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 4.0, 'financial_stress': 1.0, 'age': 32.0, 'work_study_hours': 4.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 5.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 3.0, 'age': 33.0, 'work_study_hours': 8.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 5.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 2.0, 'age': 19.0, 'work_study_hours': 12.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 4.0, 'financial_stress': 1.0, 'age': 28.0, 'work_study_hours': 0.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 4.0, 'age': 24.0, 'work_study_hours': 9.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 5.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 5.0, 'age': 28.0, 'work_study_hours': 3.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 2.0, 'age': 22.0, 'work_study_hours': 8.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 5.0, 'financial_stress': 4.0, 'age': 21.0, 'work_study_hours': 12.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 3.0, 'financial_stress': 4.0, 'age': 21.0, 'work_study_hours': 0.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 1.0, 'age': 28.0, 'work_study_hours': 9.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 5.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 1.0, 'age': 29.0, 'work_study_hours': 12.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 4.0, 'financial_stress': 5.0, 'age': 32.0, 'work_study_hours': 12.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 3.0, 'financial_stress': 5.0, 'age': 25.0, 'work_study_hours': 3.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 2.0, 'age': 25.0, 'work_study_hours': 10.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 5.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 3.0, 'financial_stress': 5.0, 'age': 20.0, 'work_study_hours': 4.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 3.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 4.0, 'financial_stress': 5.0, 'age': 29.0, 'work_study_hours': 3.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 1.0, 'age': 23.0, 'work_study_hours': 2.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 1.0, 'age': 29.0, 'work_study_hours': 7.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 3.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 3.0, 'age': 27.0, 'work_study_hours': 6.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 5.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 4.0, 'age': 24.0, 'work_study_hours': 12.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 3.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 5.0, 'age': 31.0, 'work_study_hours': 0.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 4.0, 'age': 32.0, 'work_study_hours': 10.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 5.0, 'financial_stress': 3.0, 'age': 27.0, 'work_study_hours': 1.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 3.0, 'age': 28.0, 'work_study_hours': 10.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 3.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 3.0, 'age': 33.0, 'work_study_hours': 1.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 1.0, 'age': 19.0, 'work_study_hours': 11.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 1.0, 'age': 28.0, 'work_study_hours': 10.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 5.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 1.0, 'financial_stress': 5.0, 'age': 23.0, 'work_study_hours': 12.0, 'dietary_habits': 'Unhealthy', 'study_satisfaction': 3.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 5.0, 'financial_stress': 5.0, 'age': 30.0, 'work_study_hours': 5.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 3.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 1.0, 'age': 22.0, 'work_study_hours': 4.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 2.0, 'age': 29.0, 'work_study_hours': 6.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 3.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 4.0, 'financial_stress': 5.0, 'age': 22.0, 'work_study_hours': 3.0, 'dietary_habits': 'Healthy', 'study_satisfaction': 2.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 4.0, 'age': 29.0, 'work_study_hours': 5.0, 'dietary_habits': 'Moderate', 'study_satisfaction': 4.0}
+

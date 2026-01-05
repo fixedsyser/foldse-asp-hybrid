@@ -1,0 +1,7 @@
+dataset,mean time (ms),# ASP rules
+heart,769.1,4.0
+autism,1698.9,11.6
+breastw,1449.5,4.4
+ecoli,884.1,3.4
+kidney,1175.1,4.6
+student_depression,67366.9,4.1

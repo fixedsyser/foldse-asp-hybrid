@@ -1,0 +1,1362 @@
+[
+    {
+        "instance": {
+            "sn": "NHAR",
+            "mcg": 0.37,
+            "gvh": 0.5,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.42,
+            "alm1": 0.36,
+            "alm2": 0.45,
+            "label": 1
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
+        "explanation": "[\"{'sn': 'NHAR', 'alm1': 0.36, 'gvh': 0.5, 'aac': 0.42, 'mcg': 0.37}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'NHAR' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.36 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.5859159816921178
+    },
+    {
+        "instance": {
+            "sn": "SOXS",
+            "mcg": 0.32,
+            "gvh": 0.33,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.6,
+            "alm1": 0.06,
+            "alm2": 0.2,
+            "label": 1
+        },
+        "ml_prediction": 1,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'SOXS', 'alm1': 0.06, 'gvh': 0.33, 'aac': 0.6, 'mcg': 0.32}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'SOXS' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.06 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.4160056510805035
+    },
+    {
+        "instance": {
+            "sn": "ECPD",
+            "mcg": 0.64,
+            "gvh": 0.72,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.49,
+            "alm1": 0.42,
+            "alm2": 0.19,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'ECPD', 'alm1': 0.42, 'gvh': 0.72, 'aac': 0.49, 'mcg': 0.64}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'ECPD' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.42 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.5860065364044293
+    },
+    {
+        "instance": {
+            "sn": "SERC",
+            "mcg": 0.49,
+            "gvh": 0.43,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.49,
+            "alm1": 0.3,
+            "alm2": 0.4,
+            "label": 1
+        },
+        "ml_prediction": 1,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'SERC', 'alm1': 0.3, 'gvh': 0.43, 'aac': 0.49, 'mcg': 0.49}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'SERC' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.3 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.41591893978819866
+    },
+    {
+        "instance": {
+            "sn": "TOLC",
+            "mcg": 0.71,
+            "gvh": 0.71,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.68,
+            "alm1": 0.43,
+            "alm2": 0.36,
+            "label": 0
+        },
+        "ml_prediction": 1,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "improvement",
+        "explanation": "[\"{'sn': 'TOLC', 'alm1': 0.43, 'gvh': 0.71, 'aac': 0.68, 'mcg': 0.71}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'TOLC' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.43 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.4169161402984104
+    },
+    {
+        "instance": {
+            "sn": "GCVA",
+            "mcg": 0.4,
+            "gvh": 0.5,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.45,
+            "alm1": 0.39,
+            "alm2": 0.47,
+            "label": 1
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
+        "explanation": "[\"{'sn': 'GCVA', 'alm1': 0.39, 'gvh': 0.5, 'aac': 0.45, 'mcg': 0.4}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'GCVA' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.39 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.5860644853619542
+    },
+    {
+        "instance": {
+            "sn": "CRED",
+            "mcg": 0.78,
+            "gvh": 0.33,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.57,
+            "alm1": 0.77,
+            "alm2": 0.79,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'CRED', 'alm1': 0.77, 'gvh': 0.33, 'aac': 0.57, 'mcg': 0.78}\", \"label(X,'1') does not hold because\\n\\tthe value of sn is 'CRED' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.77 which should be less equal to 0.53 does not hold \\n\"]",
+        "ml_confidence": 0.5859996160840536
+    },
+    {
+        "instance": {
+            "sn": "SLP",
+            "mcg": 0.68,
+            "gvh": 0.49,
+            "lip": 1.0,
+            "chg": 0.5,
+            "aac": 0.62,
+            "alm1": 0.55,
+            "alm2": 0.28,
+            "label": 0
+        },
+        "ml_prediction": 1,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "improvement",
+        "explanation": "[\"{'sn': 'SLP', 'alm1': 0.55, 'gvh': 0.49, 'aac': 0.62, 'mcg': 0.68}\", \"label(X,'1') does not hold because\\n\\tthe value of sn is 'SLP' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.55 which should be less equal to 0.53 does not hold \\n\"]",
+        "ml_confidence": 0.41594634563211824
+    },
+    {
+        "instance": {
+            "sn": "FIMC",
+            "mcg": 0.63,
+            "gvh": 0.57,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.49,
+            "alm1": 0.7,
+            "alm2": 0.2,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'FIMC', 'alm1': 0.7, 'gvh': 0.57, 'aac': 0.49, 'mcg': 0.63}\", \"label(X,'1') does not hold because\\n\\tthe value of sn is 'FIMC' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.7 which should be less equal to 0.53 does not hold \\n\"]",
+        "ml_confidence": 0.5860408626786402
+    },
+    {
+        "instance": {
+            "sn": "UVRC",
+            "mcg": 0.44,
+            "gvh": 0.35,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.44,
+            "alm1": 0.52,
+            "alm2": 0.59,
+            "label": 1
+        },
+        "ml_prediction": 1,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'UVRC', 'alm1': 0.52, 'gvh': 0.35, 'aac': 0.44, 'mcg': 0.44}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'UVRC' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.52 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.417277001243973
+    },
+    {
+        "instance": {
+            "sn": "PTCC",
+            "mcg": 0.5,
+            "gvh": 0.57,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.71,
+            "alm1": 0.61,
+            "alm2": 0.66,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'PTCC', 'alm1': 0.61, 'gvh': 0.57, 'aac': 0.71, 'mcg': 0.5}\", \"label(X,'1') does not hold because\\n\\tthe value of sn is 'PTCC' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.61 which should be less equal to 0.53 does not hold \\n\"]",
+        "ml_confidence": 0.5850399841786255
+    },
+    {
+        "instance": {
+            "sn": "CYSB",
+            "mcg": 0.29,
+            "gvh": 0.37,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.48,
+            "alm1": 0.44,
+            "alm2": 0.52,
+            "label": 1
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
+        "explanation": "[\"{'sn': 'CYSB', 'alm1': 0.44, 'gvh': 0.37, 'aac': 0.48, 'mcg': 0.29}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'CYSB' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.44 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.5859937650083924
+    },
+    {
+        "instance": {
+            "sn": "ARAC",
+            "mcg": 0.42,
+            "gvh": 0.4,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.56,
+            "alm1": 0.18,
+            "alm2": 0.3,
+            "label": 1
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
+        "explanation": "[\"{'sn': 'ARAC', 'alm1': 0.18, 'gvh': 0.4, 'aac': 0.56, 'mcg': 0.42}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'ARAC' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.18 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.5860179090798158
+    },
+    {
+        "instance": {
+            "sn": "PFLA",
+            "mcg": 0.44,
+            "gvh": 0.28,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.43,
+            "alm1": 0.27,
+            "alm2": 0.37,
+            "label": 1
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
+        "explanation": "[\"{'sn': 'PFLA', 'alm1': 0.27, 'gvh': 0.28, 'aac': 0.43, 'mcg': 0.44}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'PFLA' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.27 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.5856154661496507
+    },
+    {
+        "instance": {
+            "sn": "PTKA",
+            "mcg": 0.31,
+            "gvh": 0.47,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.29,
+            "alm1": 0.28,
+            "alm2": 0.39,
+            "label": 1
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
+        "explanation": "[\"{'sn': 'PTKA', 'alm1': 0.28, 'gvh': 0.47, 'aac': 0.29, 'mcg': 0.31}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'PTKA' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.28 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.5848172811891039
+    },
+    {
+        "instance": {
+            "sn": "PSTC",
+            "mcg": 0.58,
+            "gvh": 0.34,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.56,
+            "alm1": 0.87,
+            "alm2": 0.81,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'PSTC', 'alm1': 0.87, 'gvh': 0.34, 'aac': 0.56, 'mcg': 0.58}\", \"label(X,'1') does not hold because\\n\\tthe value of sn is 'PSTC' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.87 which should be less equal to 0.53 does not hold \\n\"]",
+        "ml_confidence": 0.58522178904678
+    },
+    {
+        "instance": {
+            "sn": "DHSC",
+            "mcg": 0.48,
+            "gvh": 0.45,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.6,
+            "alm1": 0.78,
+            "alm2": 0.8,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'DHSC', 'alm1': 0.78, 'gvh': 0.45, 'aac': 0.6, 'mcg': 0.48}\", \"label(X,'1') does not hold because\\n\\tthe value of sn is 'DHSC' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.78 which should be less equal to 0.53 does not hold \\n\"]",
+        "ml_confidence": 0.5859980747235191
+    },
+    {
+        "instance": {
+            "sn": "CYDA",
+            "mcg": 0.55,
+            "gvh": 0.47,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.57,
+            "alm1": 0.78,
+            "alm2": 0.8,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'CYDA', 'alm1': 0.78, 'gvh': 0.47, 'aac': 0.57, 'mcg': 0.55}\", \"label(X,'1') does not hold because\\n\\tthe value of sn is 'CYDA' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.78 which should be less equal to 0.53 does not hold \\n\"]",
+        "ml_confidence": 0.5859980301636115
+    },
+    {
+        "instance": {
+            "sn": "RIMI",
+            "mcg": 0.24,
+            "gvh": 0.57,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.63,
+            "alm1": 0.34,
+            "alm2": 0.43,
+            "label": 1
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
+        "explanation": "[\"{'sn': 'RIMI', 'alm1': 0.34, 'gvh': 0.57, 'aac': 0.63, 'mcg': 0.24}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'RIMI' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.34 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.5844460012429481
+    },
+    {
+        "instance": {
+            "sn": "NIRD",
+            "mcg": 0.44,
+            "gvh": 0.42,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.42,
+            "alm1": 0.25,
+            "alm2": 0.2,
+            "label": 1
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
+        "explanation": "[\"{'sn': 'NIRD', 'alm1': 0.25, 'gvh': 0.42, 'aac': 0.42, 'mcg': 0.44}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'NIRD' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.25 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.5859060732153428
+    },
+    {
+        "instance": {
+            "sn": "TYRP",
+            "mcg": 0.86,
+            "gvh": 0.55,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.63,
+            "alm1": 0.81,
+            "alm2": 0.83,
+            "label": 0
+        },
+        "ml_prediction": 1,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "improvement",
+        "explanation": "[\"{'sn': 'TYRP', 'alm1': 0.81, 'gvh': 0.55, 'aac': 0.63, 'mcg': 0.86}\", \"label(X,'1') does not hold because\\n\\tthe value of sn is 'TYRP' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.81 which should be less equal to 0.53 does not hold \\n\"]",
+        "ml_confidence": 0.41708935810621683
+    },
+    {
+        "instance": {
+            "sn": "SYY",
+            "mcg": 0.3,
+            "gvh": 0.44,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.49,
+            "alm1": 0.22,
+            "alm2": 0.33,
+            "label": 1
+        },
+        "ml_prediction": 1,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'SYY', 'alm1': 0.22, 'gvh': 0.44, 'aac': 0.49, 'mcg': 0.3}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'SYY' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.22 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.4166800397450701
+    },
+    {
+        "instance": {
+            "sn": "OTC1",
+            "mcg": 0.42,
+            "gvh": 0.3,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.48,
+            "alm1": 0.26,
+            "alm2": 0.36,
+            "label": 1
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
+        "explanation": "[\"{'sn': 'OTC1', 'alm1': 0.26, 'gvh': 0.3, 'aac': 0.48, 'mcg': 0.42}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'OTC1' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.26 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.5856915382597488
+    },
+    {
+        "instance": {
+            "sn": "SUBI",
+            "mcg": 0.62,
+            "gvh": 0.83,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.46,
+            "alm1": 0.36,
+            "alm2": 0.4,
+            "label": 0
+        },
+        "ml_prediction": 1,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "improvement",
+        "explanation": "[\"{'sn': 'SUBI', 'alm1': 0.36, 'gvh': 0.83, 'aac': 0.46, 'mcg': 0.62}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'SUBI' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.36 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.4160607918806267
+    },
+    {
+        "instance": {
+            "sn": "LEU3",
+            "mcg": 0.4,
+            "gvh": 0.35,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.45,
+            "alm1": 0.33,
+            "alm2": 0.42,
+            "label": 1
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
+        "explanation": "[\"{'sn': 'LEU3', 'alm1': 0.33, 'gvh': 0.35, 'aac': 0.45, 'mcg': 0.4}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'LEU3' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.33 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.5860958431146571
+    },
+    {
+        "instance": {
+            "sn": "ALKH",
+            "mcg": 0.67,
+            "gvh": 0.39,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.36,
+            "alm1": 0.38,
+            "alm2": 0.46,
+            "label": 1
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 0,
+        "true_label": 1,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'ALKH', 'alm1': 0.38, 'gvh': 0.39, 'aac': 0.36, 'mcg': 0.67}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'ALKH' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.38 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.5860212343655835
+    },
+    {
+        "instance": {
+            "sn": "UVRB",
+            "mcg": 0.22,
+            "gvh": 0.34,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.42,
+            "alm1": 0.29,
+            "alm2": 0.39,
+            "label": 1
+        },
+        "ml_prediction": 1,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'UVRB', 'alm1': 0.29, 'gvh': 0.34, 'aac': 0.42, 'mcg': 0.22}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'UVRB' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.29 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.41725564387085123
+    },
+    {
+        "instance": {
+            "sn": "LAMB",
+            "mcg": 0.67,
+            "gvh": 0.88,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.73,
+            "alm1": 0.5,
+            "alm2": 0.25,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'LAMB', 'alm1': 0.5, 'gvh': 0.88, 'aac': 0.73, 'mcg': 0.67}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'LAMB' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.5 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.5860977649928989
+    },
+    {
+        "instance": {
+            "sn": "PTFB",
+            "mcg": 0.37,
+            "gvh": 0.47,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.39,
+            "alm1": 0.76,
+            "alm2": 0.79,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'PTFB', 'alm1': 0.76, 'gvh': 0.47, 'aac': 0.39, 'mcg': 0.37}\", \"label(X,'1') does not hold because\\n\\tthe value of sn is 'PTFB' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.76 which should be less equal to 0.53 does not hold \\n\"]",
+        "ml_confidence": 0.5849682355914481
+    },
+    {
+        "instance": {
+            "sn": "SYD",
+            "mcg": 0.38,
+            "gvh": 0.3,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.43,
+            "alm1": 0.29,
+            "alm2": 0.39,
+            "label": 1
+        },
+        "ml_prediction": 1,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'SYD', 'alm1': 0.29, 'gvh': 0.3, 'aac': 0.43, 'mcg': 0.38}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'SYD' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.29 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.41614770902707526
+    },
+    {
+        "instance": {
+            "sn": "GSHR",
+            "mcg": 0.44,
+            "gvh": 0.35,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.55,
+            "alm1": 0.55,
+            "alm2": 0.61,
+            "label": 1
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 1,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'GSHR', 'alm1': 0.55, 'gvh': 0.35, 'aac': 0.55, 'mcg': 0.44}\", \"label(X,'1') does not hold because\\n\\tthe value of sn is 'GSHR' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.55 which should be less equal to 0.53 does not hold \\n\"]",
+        "ml_confidence": 0.5860835698304364
+    },
+    {
+        "instance": {
+            "sn": "OMPF",
+            "mcg": 0.75,
+            "gvh": 0.76,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.83,
+            "alm1": 0.57,
+            "alm2": 0.3,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'OMPF', 'alm1': 0.57, 'gvh': 0.76, 'aac': 0.83, 'mcg': 0.75}\", \"label(X,'1') does not hold because\\n\\tthe value of sn is 'OMPF' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.57 which should be less equal to 0.53 does not hold \\n\"]",
+        "ml_confidence": 0.5857882383446958
+    },
+    {
+        "instance": {
+            "sn": "USHA",
+            "mcg": 0.61,
+            "gvh": 0.6,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.44,
+            "alm1": 0.39,
+            "alm2": 0.38,
+            "label": 0
+        },
+        "ml_prediction": 1,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "improvement",
+        "explanation": "[\"{'sn': 'USHA', 'alm1': 0.39, 'gvh': 0.6, 'aac': 0.44, 'mcg': 0.61}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'USHA' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.39 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.4172091300836923
+    },
+    {
+        "instance": {
+            "sn": "ACKA",
+            "mcg": 0.59,
+            "gvh": 0.49,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.52,
+            "alm1": 0.45,
+            "alm2": 0.36,
+            "label": 1
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 0,
+        "true_label": 1,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'ACKA', 'alm1': 0.45, 'gvh': 0.49, 'aac': 0.52, 'mcg': 0.59}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'ACKA' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.45 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.5860220191938319
+    },
+    {
+        "instance": {
+            "sn": "AAS",
+            "mcg": 0.44,
+            "gvh": 0.52,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.43,
+            "alm1": 0.47,
+            "alm2": 0.54,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 0,
+        "status": "worsened",
+        "explanation": "[\"{'sn': 'AAS', 'alm1': 0.47, 'gvh': 0.52, 'aac': 0.43, 'mcg': 0.44}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'AAS' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.47 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.586022384982665
+    },
+    {
+        "instance": {
+            "sn": "ATKC",
+            "mcg": 0.85,
+            "gvh": 0.53,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.53,
+            "alm1": 0.52,
+            "alm2": 0.35,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'ATKC', 'alm1': 0.52, 'gvh': 0.53, 'aac': 0.53, 'mcg': 0.85}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'ATKC' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.52 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.5860137249739509
+    },
+    {
+        "instance": {
+            "sn": "AROP",
+            "mcg": 0.43,
+            "gvh": 0.4,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.58,
+            "alm1": 0.75,
+            "alm2": 0.78,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'AROP', 'alm1': 0.75, 'gvh': 0.4, 'aac': 0.58, 'mcg': 0.43}\", \"label(X,'1') does not hold because\\n\\tthe value of sn is 'AROP' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.75 which should be less equal to 0.53 does not hold \\n\"]",
+        "ml_confidence": 0.5860173425862995
+    },
+    {
+        "instance": {
+            "sn": "OMPC",
+            "mcg": 0.73,
+            "gvh": 0.84,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.86,
+            "alm1": 0.58,
+            "alm2": 0.29,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'OMPC', 'alm1': 0.58, 'gvh': 0.84, 'aac': 0.86, 'mcg': 0.73}\", \"label(X,'1') does not hold because\\n\\tthe value of sn is 'OMPC' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.58 which should be less equal to 0.53 does not hold \\n\"]",
+        "ml_confidence": 0.5858006750133924
+    },
+    {
+        "instance": {
+            "sn": "PTFA",
+            "mcg": 0.34,
+            "gvh": 0.46,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.52,
+            "alm1": 0.35,
+            "alm2": 0.44,
+            "label": 1
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
+        "explanation": "[\"{'sn': 'PTFA', 'alm1': 0.35, 'gvh': 0.46, 'aac': 0.52, 'mcg': 0.34}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'PTFA' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.35 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.5849908424979962
+    },
+    {
+        "instance": {
+            "sn": "MEPA",
+            "mcg": 0.75,
+            "gvh": 0.84,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.35,
+            "alm1": 0.52,
+            "alm2": 0.33,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'MEPA', 'alm1': 0.52, 'gvh': 0.84, 'aac': 0.35, 'mcg': 0.75}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'MEPA' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.52 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.5860493619623315
+    },
+    {
+        "instance": {
+            "sn": "MASY",
+            "mcg": 0.18,
+            "gvh": 0.3,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.46,
+            "alm1": 0.24,
+            "alm2": 0.35,
+            "label": 1
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
+        "explanation": "[\"{'sn': 'MASY', 'alm1': 0.24, 'gvh': 0.3, 'aac': 0.46, 'mcg': 0.18}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'MASY' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.24 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.586068538693898
+    },
+    {
+        "instance": {
+            "sn": "EFG",
+            "mcg": 0.4,
+            "gvh": 0.29,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.42,
+            "alm1": 0.35,
+            "alm2": 0.44,
+            "label": 1
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
+        "explanation": "[\"{'sn': 'EFG', 'alm1': 0.35, 'gvh': 0.29, 'aac': 0.42, 'mcg': 0.4}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'EFG' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.35 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.5860068966774293
+    },
+    {
+        "instance": {
+            "sn": "MCP3",
+            "mcg": 0.6,
+            "gvh": 0.5,
+            "lip": 1.0,
+            "chg": 0.5,
+            "aac": 0.54,
+            "alm1": 0.77,
+            "alm2": 0.8,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'MCP3', 'alm1': 0.77, 'gvh': 0.5, 'aac': 0.54, 'mcg': 0.6}\", \"label(X,'1') does not hold because\\n\\tthe value of sn is 'MCP3' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.77 which should be less equal to 0.53 does not hold \\n\"]",
+        "ml_confidence": 0.5860620741980176
+    },
+    {
+        "instance": {
+            "sn": "ATKA",
+            "mcg": 0.72,
+            "gvh": 0.42,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.65,
+            "alm1": 0.77,
+            "alm2": 0.79,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'ATKA', 'alm1': 0.77, 'gvh': 0.42, 'aac': 0.65, 'mcg': 0.72}\", \"label(X,'1') does not hold because\\n\\tthe value of sn is 'ATKA' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.77 which should be less equal to 0.53 does not hold \\n\"]",
+        "ml_confidence": 0.5860159023788544
+    },
+    {
+        "instance": {
+            "sn": "SYGB",
+            "mcg": 0.25,
+            "gvh": 0.51,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.37,
+            "alm1": 0.42,
+            "alm2": 0.5,
+            "label": 1
+        },
+        "ml_prediction": 1,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'SYGB', 'alm1': 0.42, 'gvh': 0.51, 'aac': 0.37, 'mcg': 0.25}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'SYGB' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.42 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.41628970608843857
+    },
+    {
+        "instance": {
+            "sn": "FECA",
+            "mcg": 0.52,
+            "gvh": 0.81,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.72,
+            "alm1": 0.38,
+            "alm2": 0.38,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 0,
+        "status": "worsened",
+        "explanation": "[\"{'sn': 'FECA', 'alm1': 0.38, 'gvh': 0.81, 'aac': 0.72, 'mcg': 0.52}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'FECA' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.38 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.5860230849803079
+    },
+    {
+        "instance": {
+            "sn": "GGT",
+            "mcg": 0.74,
+            "gvh": 0.82,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.49,
+            "alm1": 0.49,
+            "alm2": 0.41,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'GGT', 'alm1': 0.49, 'gvh': 0.82, 'aac': 0.49, 'mcg': 0.74}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'GGT' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.49 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.5860675666221314
+    },
+    {
+        "instance": {
+            "sn": "PEPE",
+            "mcg": 0.41,
+            "gvh": 0.48,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.51,
+            "alm1": 0.44,
+            "alm2": 0.51,
+            "label": 1
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
+        "explanation": "[\"{'sn': 'PEPE', 'alm1': 0.44, 'gvh': 0.48, 'aac': 0.51, 'mcg': 0.41}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'PEPE' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.44 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.5856321839027684
+    },
+    {
+        "instance": {
+            "sn": "MALF",
+            "mcg": 0.63,
+            "gvh": 0.54,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.65,
+            "alm1": 0.79,
+            "alm2": 0.81,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'MALF', 'alm1': 0.79, 'gvh': 0.54, 'aac': 0.65, 'mcg': 0.63}\", \"label(X,'1') does not hold because\\n\\tthe value of sn is 'MALF' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.79 which should be less equal to 0.53 does not hold \\n\"]",
+        "ml_confidence": 0.5860848523264485
+    },
+    {
+        "instance": {
+            "sn": "GLYA",
+            "mcg": 0.17,
+            "gvh": 0.38,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.45,
+            "alm1": 0.42,
+            "alm2": 0.5,
+            "label": 1
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
+        "explanation": "[\"{'sn': 'GLYA', 'alm1': 0.42, 'gvh': 0.38, 'aac': 0.45, 'mcg': 0.17}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'GLYA' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.42 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.5860810270850201
+    },
+    {
+        "instance": {
+            "sn": "SYFB",
+            "mcg": 0.34,
+            "gvh": 0.42,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.41,
+            "alm1": 0.34,
+            "alm2": 0.43,
+            "label": 1
+        },
+        "ml_prediction": 1,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'SYFB', 'alm1': 0.34, 'gvh': 0.42, 'aac': 0.41, 'mcg': 0.34}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'SYFB' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.34 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.41623303114866717
+    },
+    {
+        "instance": {
+            "sn": "NRFF",
+            "mcg": 0.7,
+            "gvh": 0.71,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.42,
+            "alm1": 0.84,
+            "alm2": 0.85,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'NRFF', 'alm1': 0.84, 'gvh': 0.71, 'aac': 0.42, 'mcg': 0.7}\", \"label(X,'1') does not hold because\\n\\tthe value of sn is 'NRFF' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.84 which should be less equal to 0.53 does not hold \\n\"]",
+        "ml_confidence": 0.5858481820903663
+    },
+    {
+        "instance": {
+            "sn": "FRDD",
+            "mcg": 0.64,
+            "gvh": 0.58,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.48,
+            "alm1": 0.78,
+            "alm2": 0.73,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'FRDD', 'alm1': 0.78, 'gvh': 0.58, 'aac': 0.48, 'mcg': 0.64}\", \"label(X,'1') does not hold because\\n\\tthe value of sn is 'FRDD' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.78 which should be less equal to 0.53 does not hold \\n\"]",
+        "ml_confidence": 0.5860456245511267
+    },
+    {
+        "instance": {
+            "sn": "MSBB",
+            "mcg": 0.16,
+            "gvh": 0.51,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.33,
+            "alm1": 0.39,
+            "alm2": 0.48,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 0,
+        "status": "worsened",
+        "explanation": "[\"{'sn': 'MSBB', 'alm1': 0.39, 'gvh': 0.51, 'aac': 0.33, 'mcg': 0.16}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'MSBB' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.39 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.5860002835627169
+    },
+    {
+        "instance": {
+            "sn": "OMPP",
+            "mcg": 0.69,
+            "gvh": 0.59,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.77,
+            "alm1": 0.39,
+            "alm2": 0.21,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'OMPP', 'alm1': 0.39, 'gvh': 0.59, 'aac': 0.77, 'mcg': 0.69}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'OMPP' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.39 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.5857746023112603
+    },
+    {
+        "instance": {
+            "sn": "OTC2",
+            "mcg": 0.48,
+            "gvh": 0.42,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.45,
+            "alm1": 0.25,
+            "alm2": 0.35,
+            "label": 1
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
+        "explanation": "[\"{'sn': 'OTC2', 'alm1': 0.25, 'gvh': 0.42, 'aac': 0.45, 'mcg': 0.48}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'OTC2' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.25 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.585677116953117
+    },
+    {
+        "instance": {
+            "sn": "CHEB",
+            "mcg": 0.34,
+            "gvh": 0.45,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.38,
+            "alm1": 0.24,
+            "alm2": 0.35,
+            "label": 1
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
+        "explanation": "[\"{'sn': 'CHEB', 'alm1': 0.24, 'gvh': 0.45, 'aac': 0.38, 'mcg': 0.34}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'CHEB' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.24 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.5860021438430435
+    },
+    {
+        "instance": {
+            "sn": "MALG",
+            "mcg": 0.7,
+            "gvh": 0.4,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.56,
+            "alm1": 0.86,
+            "alm2": 0.83,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'MALG', 'alm1': 0.86, 'gvh': 0.4, 'aac': 0.56, 'mcg': 0.7}\", \"label(X,'1') does not hold because\\n\\tthe value of sn is 'MALG' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.86 which should be less equal to 0.53 does not hold \\n\"]",
+        "ml_confidence": 0.5860827825999624
+    },
+    {
+        "instance": {
+            "sn": "SPEA",
+            "mcg": 0.29,
+            "gvh": 0.39,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.52,
+            "alm1": 0.4,
+            "alm2": 0.48,
+            "label": 0
+        },
+        "ml_prediction": 1,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'SPEA', 'alm1': 0.4, 'gvh': 0.39, 'aac': 0.52, 'mcg': 0.29}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'SPEA' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.4 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.41603310363464946
+    },
+    {
+        "instance": {
+            "sn": "AMY2",
+            "mcg": 0.21,
+            "gvh": 0.34,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.51,
+            "alm1": 0.28,
+            "alm2": 0.39,
+            "label": 1
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
+        "explanation": "[\"{'sn': 'AMY2', 'alm1': 0.28, 'gvh': 0.34, 'aac': 0.51, 'mcg': 0.21}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'AMY2' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.28 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.5860188411685219
+    },
+    {
+        "instance": {
+            "sn": "KAD",
+            "mcg": 0.54,
+            "gvh": 0.47,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.28,
+            "alm1": 0.33,
+            "alm2": 0.42,
+            "label": 1
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
+        "explanation": "[\"{'sn': 'KAD', 'alm1': 0.33, 'gvh': 0.47, 'aac': 0.28, 'mcg': 0.54}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'KAD' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.33 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.5860939751343653
+    },
+    {
+        "instance": {
+            "sn": "PHOH",
+            "mcg": 0.29,
+            "gvh": 0.47,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.41,
+            "alm1": 0.23,
+            "alm2": 0.34,
+            "label": 1
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
+        "explanation": "[\"{'sn': 'PHOH', 'alm1': 0.23, 'gvh': 0.47, 'aac': 0.41, 'mcg': 0.29}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'PHOH' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.23 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.5855144648132632
+    },
+    {
+        "instance": {
+            "sn": "PSTA",
+            "mcg": 0.34,
+            "gvh": 0.67,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.52,
+            "alm1": 0.76,
+            "alm2": 0.79,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'PSTA', 'alm1': 0.76, 'gvh': 0.67, 'aac': 0.52, 'mcg': 0.34}\", \"label(X,'1') does not hold because\\n\\tthe value of sn is 'PSTA' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.76 which should be less equal to 0.53 does not hold \\n\"]",
+        "ml_confidence": 0.5852429443667428
+    },
+    {
+        "instance": {
+            "sn": "FECB",
+            "mcg": 0.68,
+            "gvh": 0.82,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.38,
+            "alm1": 0.65,
+            "alm2": 0.56,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'FECB', 'alm1': 0.65, 'gvh': 0.82, 'aac': 0.38, 'mcg': 0.68}\", \"label(X,'1') does not hold because\\n\\tthe value of sn is 'FECB' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.65 which should be less equal to 0.53 does not hold \\n\"]",
+        "ml_confidence": 0.5860257568203071
+    },
+    {
+        "instance": {
+            "sn": "DSBA",
+            "mcg": 0.71,
+            "gvh": 0.71,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.4,
+            "alm1": 0.54,
+            "alm2": 0.39,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'DSBA', 'alm1': 0.54, 'gvh': 0.71, 'aac': 0.4, 'mcg': 0.71}\", \"label(X,'1') does not hold because\\n\\tthe value of sn is 'DSBA' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.54 which should be less equal to 0.53 does not hold \\n\"]",
+        "ml_confidence": 0.5860022819080555
+    },
+    {
+        "instance": {
+            "sn": "TESA",
+            "mcg": 0.69,
+            "gvh": 0.66,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.41,
+            "alm1": 0.5,
+            "alm2": 0.25,
+            "label": 0
+        },
+        "ml_prediction": 1,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "improvement",
+        "explanation": "[\"{'sn': 'TESA', 'alm1': 0.5, 'gvh': 0.66, 'aac': 0.41, 'mcg': 0.69}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'TESA' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.5 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.416759337603621
+    },
+    {
+        "instance": {
+            "sn": "PNP",
+            "mcg": 0.36,
+            "gvh": 0.56,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.43,
+            "alm1": 0.45,
+            "alm2": 0.53,
+            "label": 1
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
+        "explanation": "[\"{'sn': 'PNP', 'alm1': 0.45, 'gvh': 0.56, 'aac': 0.43, 'mcg': 0.36}\", \"label(X,'1') does hold because\\n\\tthe value of sn is 'PNP' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.45 which should be less equal to 0.53 does hold \\n\"]",
+        "ml_confidence": 0.5854613866048928
+    },
+    {
+        "instance": {
+            "sn": "MELB",
+            "mcg": 0.47,
+            "gvh": 0.46,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.62,
+            "alm1": 0.74,
+            "alm2": 0.77,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'MELB', 'alm1': 0.74, 'gvh': 0.46, 'aac': 0.62, 'mcg': 0.47}\", \"label(X,'1') does not hold because\\n\\tthe value of sn is 'MELB' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.74 which should be less equal to 0.53 does not hold \\n\"]",
+        "ml_confidence": 0.5860538777657444
+    }
+]

@@ -1,0 +1,33 @@
+Rule used 4 times:
+[F]label(X,'1') :- not [T]chest_pain(X,'4').
+
+Rule used 2 times:
+[T]label(X,'1') :- not [F]chest_pain(X,'4').
+
+Rule used 2 times:
+[F]label(X,'1') :- [T]major_vessels(X,'0'), [T]chest_pain(X,'4'), oldpeak(X,N1), [F]N1=<1.5, blood_pressure(X,N2), [T]N2=<142.0, not [U]ab1(X,'True'), not [U]ab2(X,'True'), not [U]ab3(X,'True').
+
+Rule used 1 times:
+{'chest_pain': '4', 'major_vessels': '2', 'oldpeak': 0.3, 'blood_pressure': 106.0, 'age': 67.0, 'serum_cholestoral': 223.0}
+
+Rule used 1 times:
+[F]label(X,'1') :- [F]major_vessels(X,'0'), [T]chest_pain(X,'4'), oldpeak(X,N1), [T]N1=<1.5, blood_pressure(X,N2), [T]N2=<142.0, not [U]ab1(X,'True'), not [U]ab2(X,'True'), not [U]ab3(X,'True').
+
+Rule used 1 times:
+{'chest_pain': '1', 'major_vessels': '0', 'oldpeak': 0.2, 'blood_pressure': 170.0, 'age': 59.0, 'serum_cholestoral': 288.0}
+
+Rule used 1 times:
+{'chest_pain': '4', 'major_vessels': '0', 'oldpeak': 1.6, 'blood_pressure': 112.0, 'age': 71.0, 'serum_cholestoral': 149.0}
+
+Rule used 1 times:
+{'chest_pain': '4', 'major_vessels': '0', 'oldpeak': 1.6, 'blood_pressure': 120.0, 'age': 35.0, 'serum_cholestoral': 198.0}
+
+Rule used 1 times:
+{'chest_pain': '4', 'major_vessels': '3', 'oldpeak': 6.2, 'blood_pressure': 160.0, 'age': 62.0, 'serum_cholestoral': 164.0}
+
+Rule used 1 times:
+[F]label(X,'1') :- [F]major_vessels(X,'0'), [T]chest_pain(X,'4'), oldpeak(X,N1), [F]N1=<1.5, blood_pressure(X,N2), [F]N2=<142.0, not [U]ab1(X,'True'), not [U]ab2(X,'True'), not [U]ab3(X,'True').
+
+Rule used 1 times:
+{'chest_pain': '3', 'major_vessels': '0', 'oldpeak': 1.6, 'blood_pressure': 115.0, 'age': 67.0, 'serum_cholestoral': 564.0}
+

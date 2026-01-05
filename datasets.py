@@ -42,7 +42,7 @@ def autism():
     num_attrs = ["age"]
     label, pos_val = "label", "NO"
     model = FoldModel(str_attrs, num_attrs, label, pos_val)
-    data = model.load_data("data/autism.csv")
+    data = model.load_data("datasets/autism.csv")
     print("\n% autism dataset", len(data), len(str_attrs + num_attrs) + 1)
     return model, data
 
@@ -81,7 +81,7 @@ def breastw():
     num_attrs = []
     label, pos_val = "label", "malignant"
     model = FoldModel(str_attrs, num_attrs, label, pos_val)
-    data = model.load_data("data/breastw.csv")
+    data = model.load_data("datasets/breastw.csv")
     print("\n% breastw dataset", len(data), len(str_attrs + num_attrs) + 1)
     return model, data
 
@@ -129,7 +129,7 @@ def heart():
     ]
     label, pos_val = "label", "absent"
     model = FoldModel(str_attrs, num_attrs, label, pos_val)
-    data = model.load_data("data/heart.csv")
+    data = model.load_data("datasets/heart.csv")
     print("\n% heart dataset", len(data), len(str_attrs + num_attrs) + 1)
     return model, data
 
@@ -198,7 +198,7 @@ def kidney():
     ]
     label, pos_val = "label", "ckd"
     model = FoldModel(str_attrs, num_attrs, label, pos_val)
-    data = model.load_data("data/kidney.csv")
+    data = model.load_data("datasets/kidney.csv")
     print("\n% kidney dataset", len(data), len(str_attrs + num_attrs) + 1)
     return model, data
 
@@ -227,7 +227,7 @@ def ecoli():
     num_attrs = ["mcg", "gvh", "lip", "chg", "aac", "alm1", "alm2"]
     label, pos_val = "label", "cp"
     model = FoldModel(str_attrs, num_attrs, label, pos_val)
-    data = model.load_data("data/ecoli.csv")
+    data = model.load_data("datasets/ecoli.csv")
     print("\n% ecoli dataset", len(data), len(str_attrs + num_attrs) + 1)
     return model, data
 
@@ -261,6 +261,6 @@ def student_depression():
     num_attrs = ["age", "academic_pressure", "work_pressure", "cgpa", "study_satisfaction", "job_satisfaction", "work_study_hours", "financial_stress"]
     label, pos_val = "depression", "1"
     model = FoldModel(str_attrs, num_attrs, label, pos_val)
-    data = model.load_data("data/student_depression.csv")
+    data = model.load_data("datasets/student_depression.csv")
     print("\n% student depression dataset", len(data), len(str_attrs + num_attrs) + 1)
     return model, data

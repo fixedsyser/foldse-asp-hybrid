@@ -1,0 +1,132 @@
+Rule used 84 times:
+[F]label(X,'1') :- not [T]have_you_ever_had_suicidal_thoughts(X,'No'), not [U]ab1(X,'True').
+
+Rule used 84 times:
+[F]label(X,'1') :- [T]have_you_ever_had_suicidal_thoughts(X,'No'), academic_pressure(X,N1), [F]N1!=<3.0, financial_stress(X,N2), [F]N2!=<4.0.
+
+Rule used 57 times:
+[T]label(X,'1') :- not [F]have_you_ever_had_suicidal_thoughts(X,'No'), not [U]ab1(X,'True').
+
+Rule used 26 times:
+[F]ab1(X,'True') :- academic_pressure(X,N1), [T]N1=<2.0, financial_stress(X,N2), [F]N2=<2.0.
+
+Rule used 20 times:
+[F]ab1(X,'True') :- academic_pressure(X,N1), [F]N1=<2.0, financial_stress(X,N2), [T]N2=<2.0.
+
+Rule used 18 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 3.0, 'financial_stress': 4.0}
+
+Rule used 15 times:
+[T]ab1(X,'True') :- academic_pressure(X,N1), [T]N1=<2.0, financial_stress(X,N2), [T]N2=<2.0.
+
+Rule used 15 times:
+[F]label(X,'1') :- not [F]have_you_ever_had_suicidal_thoughts(X,'No'), not [U]ab1(X,'True').
+
+Rule used 15 times:
+[F]label(X,'1') :- [F]have_you_ever_had_suicidal_thoughts(X,'No'), academic_pressure(X,N1), [F]N1!=<3.0, financial_stress(X,N2), [F]N2!=<4.0.
+
+Rule used 11 times:
+[F]ab1(X,'True') :- academic_pressure(X,N1), [F]N1=<2.0, financial_stress(X,N2), [F]N2=<2.0.
+
+Rule used 11 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 3.0, 'financial_stress': 5.0}
+
+Rule used 10 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 3.0}
+
+Rule used 9 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 1.0}
+
+Rule used 8 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 3.0}
+
+Rule used 8 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 4.0, 'financial_stress': 4.0}
+
+Rule used 7 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 5.0, 'financial_stress': 1.0}
+
+Rule used 7 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 3.0, 'financial_stress': 3.0}
+
+Rule used 5 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 2.0, 'financial_stress': 5.0}
+
+Rule used 5 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 5.0, 'financial_stress': 3.0}
+
+Rule used 5 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 2.0}
+
+Rule used 5 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 4.0, 'financial_stress': 1.0}
+
+Rule used 5 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 2.0}
+
+Rule used 5 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 3.0}
+
+Rule used 5 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 1.0}
+
+Rule used 4 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 5.0, 'financial_stress': 2.0}
+
+Rule used 4 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 4.0}
+
+Rule used 3 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 4.0}
+
+Rule used 3 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 4.0, 'financial_stress': 2.0}
+
+Rule used 3 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 2.0}
+
+Rule used 3 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 4.0, 'financial_stress': 1.0}
+
+Rule used 3 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 2.0, 'financial_stress': 5.0}
+
+Rule used 3 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 4.0, 'financial_stress': 3.0}
+
+Rule used 3 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 2.0, 'financial_stress': 4.0}
+
+Rule used 2 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 3.0, 'financial_stress': 2.0}
+
+Rule used 2 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 4.0, 'financial_stress': 2.0}
+
+Rule used 2 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 2.0, 'financial_stress': 3.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 3.0, 'financial_stress': 5.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 5.0, 'financial_stress': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 3.0, 'financial_stress': 1.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 4.0, 'financial_stress': 3.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 4.0, 'financial_stress': 5.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 4.0, 'financial_stress': 4.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'No', 'academic_pressure': 1.0, 'financial_stress': 5.0}
+
+Rule used 1 times:
+{'have_you_ever_had_suicidal_thoughts': 'Yes', 'academic_pressure': 1.0, 'financial_stress': 5.0}
+

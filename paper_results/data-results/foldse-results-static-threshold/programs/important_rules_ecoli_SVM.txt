@@ -1,0 +1,108 @@
+Rule used 28 times:
+[F]ab3(X,'True') :- mcg(X,N1), [F]N1!=<0.53, not [U]ab1(X,'True'), not [U]ab2(X,'True').
+
+Rule used 28 times:
+[T]label(X,'1') :- not [F]sn(X,'FECR'), alm1(X,N3), [T]N3=<0.53, not [U]ab3(X,'True'), not [U]ab4(X,'True').
+
+Rule used 23 times:
+[F]ab4(X,'True') :- [F]sn(X,'TORA'), aac(X,N2), [F]N2>0.51, [T]N2=<0.53.
+
+Rule used 4 times:
+[F]ab4(X,'True') :- [F]sn(X,'TORA'), aac(X,N2), [T]N2>0.51, [F]N2=<0.53.
+
+Rule used 2 times:
+[F]label(X,'1') :- not [F]sn(X,'FECR'), alm1(X,N1), [F]N1=<0.53, not [U]ab3(X,'True'), not [U]ab4(X,'True').
+
+Rule used 1 times:
+{'sn': 'NHAR', 'alm1': 0.36, 'gvh': 0.5, 'aac': 0.42, 'mcg': 0.37}
+
+Rule used 1 times:
+{'sn': 'TOLC', 'alm1': 0.43, 'gvh': 0.71, 'aac': 0.68, 'mcg': 0.71}
+
+Rule used 1 times:
+{'sn': 'GCVA', 'alm1': 0.39, 'gvh': 0.5, 'aac': 0.45, 'mcg': 0.4}
+
+Rule used 1 times:
+{'sn': 'SLP', 'alm1': 0.55, 'gvh': 0.49, 'aac': 0.62, 'mcg': 0.68}
+
+Rule used 1 times:
+{'sn': 'CYSB', 'alm1': 0.44, 'gvh': 0.37, 'aac': 0.48, 'mcg': 0.29}
+
+Rule used 1 times:
+{'sn': 'ARAC', 'alm1': 0.18, 'gvh': 0.4, 'aac': 0.56, 'mcg': 0.42}
+
+Rule used 1 times:
+{'sn': 'PFLA', 'alm1': 0.27, 'gvh': 0.28, 'aac': 0.43, 'mcg': 0.44}
+
+Rule used 1 times:
+{'sn': 'PTKA', 'alm1': 0.28, 'gvh': 0.47, 'aac': 0.29, 'mcg': 0.31}
+
+Rule used 1 times:
+{'sn': 'RIMI', 'alm1': 0.34, 'gvh': 0.57, 'aac': 0.63, 'mcg': 0.24}
+
+Rule used 1 times:
+{'sn': 'NIRD', 'alm1': 0.25, 'gvh': 0.42, 'aac': 0.42, 'mcg': 0.44}
+
+Rule used 1 times:
+{'sn': 'TYRP', 'alm1': 0.81, 'gvh': 0.55, 'aac': 0.63, 'mcg': 0.86}
+
+Rule used 1 times:
+{'sn': 'OTC1', 'alm1': 0.26, 'gvh': 0.3, 'aac': 0.48, 'mcg': 0.42}
+
+Rule used 1 times:
+{'sn': 'SUBI', 'alm1': 0.36, 'gvh': 0.83, 'aac': 0.46, 'mcg': 0.62}
+
+Rule used 1 times:
+{'sn': 'LEU3', 'alm1': 0.33, 'gvh': 0.35, 'aac': 0.45, 'mcg': 0.4}
+
+Rule used 1 times:
+{'sn': 'USHA', 'alm1': 0.39, 'gvh': 0.6, 'aac': 0.44, 'mcg': 0.61}
+
+Rule used 1 times:
+{'sn': 'AAS', 'alm1': 0.47, 'gvh': 0.52, 'aac': 0.43, 'mcg': 0.44}
+
+Rule used 1 times:
+{'sn': 'PTFA', 'alm1': 0.35, 'gvh': 0.46, 'aac': 0.52, 'mcg': 0.34}
+
+Rule used 1 times:
+[F]ab4(X,'True') :- [F]sn(X,'TORA'), aac(X,N2), [T]N2>0.51, [T]N2=<0.53.
+
+Rule used 1 times:
+{'sn': 'MASY', 'alm1': 0.24, 'gvh': 0.3, 'aac': 0.46, 'mcg': 0.18}
+
+Rule used 1 times:
+{'sn': 'EFG', 'alm1': 0.35, 'gvh': 0.29, 'aac': 0.42, 'mcg': 0.4}
+
+Rule used 1 times:
+{'sn': 'FECA', 'alm1': 0.38, 'gvh': 0.81, 'aac': 0.72, 'mcg': 0.52}
+
+Rule used 1 times:
+{'sn': 'PEPE', 'alm1': 0.44, 'gvh': 0.48, 'aac': 0.51, 'mcg': 0.41}
+
+Rule used 1 times:
+{'sn': 'GLYA', 'alm1': 0.42, 'gvh': 0.38, 'aac': 0.45, 'mcg': 0.17}
+
+Rule used 1 times:
+{'sn': 'MSBB', 'alm1': 0.39, 'gvh': 0.51, 'aac': 0.33, 'mcg': 0.16}
+
+Rule used 1 times:
+{'sn': 'OTC2', 'alm1': 0.25, 'gvh': 0.42, 'aac': 0.45, 'mcg': 0.48}
+
+Rule used 1 times:
+{'sn': 'CHEB', 'alm1': 0.24, 'gvh': 0.45, 'aac': 0.38, 'mcg': 0.34}
+
+Rule used 1 times:
+{'sn': 'AMY2', 'alm1': 0.28, 'gvh': 0.34, 'aac': 0.51, 'mcg': 0.21}
+
+Rule used 1 times:
+{'sn': 'KAD', 'alm1': 0.33, 'gvh': 0.47, 'aac': 0.28, 'mcg': 0.54}
+
+Rule used 1 times:
+{'sn': 'PHOH', 'alm1': 0.23, 'gvh': 0.47, 'aac': 0.41, 'mcg': 0.29}
+
+Rule used 1 times:
+{'sn': 'TESA', 'alm1': 0.5, 'gvh': 0.66, 'aac': 0.41, 'mcg': 0.69}
+
+Rule used 1 times:
+{'sn': 'PNP', 'alm1': 0.45, 'gvh': 0.56, 'aac': 0.43, 'mcg': 0.36}
+

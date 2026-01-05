@@ -1,0 +1,6 @@
+Rule used 1 times:
+{'sc': 11.5, 'sg': 1.015, 'hemo': 14.1, 'al': '0'}
+
+Rule used 1 times:
+[T]label(X,'1') :- sc(X,N1), [T]N1>1.2.
+

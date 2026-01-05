@@ -1,0 +1,27 @@
+Rule used 4 times:
+[T]label(X,'1') :- sg(X,N1), [T]N1=<1.015.
+
+Rule used 1 times:
+{'pcv': '?', 'sg': 1.02, 'rbc': '?', 'pot': 3.8, 'sc': 2.2}
+
+Rule used 1 times:
+[F]label(X,'1') :- pcv(X,N1), [F]N1!>39.0, not [U]ab1(X,'True').
+
+Rule used 1 times:
+[F]label(X,'1') :- sg(X,N1), [F]N1=<1.015.
+
+Rule used 1 times:
+[F]label(X,'1') :- not [F]rbc(X,'normal'), pot(X,N1), [F]N1!>3.4.
+
+Rule used 1 times:
+{'pcv': 40.0, 'sg': 1.015, 'rbc': '?', 'pot': 4.2, 'sc': 0.8}
+
+Rule used 1 times:
+{'pcv': 24.0, 'sg': 1.01, 'rbc': 'abnormal', 'pot': 3.4, 'sc': 10.8}
+
+Rule used 1 times:
+{'pcv': 48.0, 'sg': 1.01, 'rbc': '?', 'pot': '?', 'sc': 1.1}
+
+Rule used 1 times:
+{'pcv': 52.0, 'sg': 1.015, 'rbc': 'abnormal', 'pot': 3.8, 'sc': 1.7}
+

@@ -7,7 +7,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 from data_loader import load_dataset, preprocess_data_for_ml
 from foldse_api import generate_model, predict_with_model
 from ml_models import get_ml_models
-from hybrid_model import create_hybrid_predictions
+from hybrid_model import calculate_threshold, create_hybrid_predictions
 from explainability import (
     get_explanations,
     rank_rules_by_contribution,
@@ -71,7 +71,7 @@ def main():
                 train_indices,
                 test_indices,
             ) = train_test_split(
-                X, y, X.index, test_size=0.2, random_state=random_state
+                X, y, X.index, test_size=0.2, random_state=random_state, stratify=y
             )
 
             data_train = [data[i] for i in train_indices]
@@ -112,6 +112,8 @@ def main():
                 "Hybrid F1 Score": np.nan,
             }
             all_experiments_results.append(pure_foldse_result)
+            
+            print("training and predicting with ML models...")
 
             models = get_ml_models(random_state=random_state)
             for model_name, ml_model in models.items():
@@ -126,13 +128,16 @@ def main():
                     except Exception as e:
                         ml_confidences = np.full((len(X_test_ml), 2), 0.5)
 
-                y_pred_hybrid = create_hybrid_predictions(
-                    y_true, y_pred_ml, y_pred_foldse, ml_confidences
-                )
                 acc_ml = accuracy_score(y_true, y_pred_ml)
                 p_ml = precision_score(y_true, y_pred_ml, zero_division=0)
                 r_ml = recall_score(y_true, y_pred_ml, zero_division=0)
                 f1_ml = f1_score(y_true, y_pred_ml, zero_division=0)
+                
+                confidence_threshold = calculate_threshold(acc_ml, acc_foldse)
+                
+                y_pred_hybrid = create_hybrid_predictions(
+                    y_true, y_pred_ml, y_pred_foldse, ml_confidences, confidence_threshold
+                )
 
                 acc_hybrid = accuracy_score(y_true, y_pred_hybrid)
                 p_hybrid = precision_score(y_true, y_pred_hybrid, zero_division=0)
@@ -187,9 +192,11 @@ def main():
                             ex["ml_confidence"] = float(ml_confidences[i][label_index])
                         except ValueError:
                             ex["ml_confidence"] = None
+                        ex["confidence_threshold"] = confidence_threshold
                 else:
                     for ex in explanations:
                         ex["ml_confidence"] = None
+                        ex["confidence_threshold"] = None
 
                 save_explanations(explanations, dataset_name, model_name)
 

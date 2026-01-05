@@ -1,5 +1,5 @@
 def create_hybrid_predictions(
-    y_true, y_pred_ml, y_pred_foldse, ml_confidences, confidence_threshold=0.6
+    y_true, y_pred_ml, y_pred_foldse, ml_confidences, confidence_threshold
 ):
 
     """
@@ -36,3 +36,30 @@ def create_hybrid_predictions(
         y_pred_hybrid.append(hybrid_pred)
 
     return y_pred_hybrid
+
+    """
+    Calculate the confidence threshold based on the accuracies of the FOLD-SE and ML model
+
+    Parameters
+    ----------
+    acc_ml : float
+        the accuracy score of the ML model
+    acc_foldse : float
+        the accuracy score of the FOLD-SE model.
+    base_threshold : float, optional
+        The base threshold hyperparameter.
+    dynamic_treshold_bool: boolean
+        if set to true, use a dynamic threshold
+        if set to false, use the static base threshold
+
+    Returns
+    -------
+    confidence_threshold : float
+        The threshold below which the FOLD-SE model's prediction is used instead of the ML model's prediction.
+    """
+def calculate_threshold(acc_ml, acc_foldse, base_threshold=0.6, dynamic_treshold_bool=True):
+    if(dynamic_treshold_bool):
+        acc_diff = acc_ml - acc_foldse
+        return base_threshold - acc_diff
+    else:
+        return base_threshold

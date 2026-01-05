@@ -1,0 +1,15 @@
+Rule used 1 times:
+{'cell_size_uniformity': '1', 'marginal_adhesion': '1', 'single_epi_cell_size': '2', 'bare_nuclei': '1', 'clump_thickness': '1'}
+
+Rule used 1 times:
+[F]label(X,'1') :- not [T]cell_size_uniformity(X,'1'), not [U]ab2(X,'True').
+
+Rule used 1 times:
+{'cell_size_uniformity': '2', 'marginal_adhesion': '2', 'single_epi_cell_size': '2', 'bare_nuclei': '2', 'clump_thickness': '5'}
+
+Rule used 1 times:
+[F]ab2(X,'True') :- [F]bare_nuclei(X,'1'), not [F]clump_thickness(X,'10'), not [U]ab1(X,'True').
+
+Rule used 1 times:
+[T]label(X,'1') :- not [F]cell_size_uniformity(X,'1'), not [U]ab2(X,'True').
+

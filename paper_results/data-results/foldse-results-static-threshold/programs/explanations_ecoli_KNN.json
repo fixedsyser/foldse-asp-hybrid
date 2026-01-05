@@ -1,0 +1,1362 @@
+[
+    {
+        "instance": {
+            "sn": "PTGB",
+            "mcg": 0.58,
+            "gvh": 0.55,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.57,
+            "alm1": 0.7,
+            "alm2": 0.74,
+            "label": 0
+        },
+        "ml_prediction": 1,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 1,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.7, 'sn': 'PTGB', 'gvh': 0.55, 'mcg': 0.58, 'alm2': 0.74}\", \"label(X,'1') does not hold because\\n\\tthe value of alm1 is 0.7 which should be less equal to 0.55 does not hold \\n\"]",
+        "ml_confidence": 0.6
+    },
+    {
+        "instance": {
+            "sn": "NHAR",
+            "mcg": 0.37,
+            "gvh": 0.5,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.42,
+            "alm1": 0.36,
+            "alm2": 0.45,
+            "label": 1
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 0,
+        "true_label": 1,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.36, 'sn': 'NHAR', 'gvh': 0.5, 'mcg': 0.37, 'alm2': 0.45}\", \"label(X,'1') does hold because\\n\\tthe value of alm1 is 0.36 which should be less equal to 0.55 does hold \\n\"]",
+        "ml_confidence": 0.6
+    },
+    {
+        "instance": {
+            "sn": "G3P1",
+            "mcg": 0.38,
+            "gvh": 0.46,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.48,
+            "alm1": 0.22,
+            "alm2": 0.29,
+            "label": 1
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 0,
+        "true_label": 1,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.22, 'sn': 'G3P1', 'gvh': 0.46, 'mcg': 0.38, 'alm2': 0.29}\", \"label(X,'1') does hold because\\n\\tthe value of alm1 is 0.22 which should be less equal to 0.55 does hold \\n\"]",
+        "ml_confidence": 0.6
+    },
+    {
+        "instance": {
+            "sn": "KGTP",
+            "mcg": 0.45,
+            "gvh": 0.4,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.61,
+            "alm1": 0.74,
+            "alm2": 0.77,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.74, 'sn': 'KGTP', 'gvh': 0.4, 'mcg': 0.45, 'alm2': 0.77}\", \"label(X,'1') does not hold because\\n\\tthe value of alm1 is 0.74 which should be less equal to 0.55 does not hold \\n\"]",
+        "ml_confidence": 0.8
+    },
+    {
+        "instance": {
+            "sn": "GCVA",
+            "mcg": 0.4,
+            "gvh": 0.5,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.45,
+            "alm1": 0.39,
+            "alm2": 0.47,
+            "label": 1
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 0,
+        "true_label": 1,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.39, 'sn': 'GCVA', 'gvh': 0.5, 'mcg': 0.4, 'alm2': 0.47}\", \"label(X,'1') does hold because\\n\\tthe value of alm1 is 0.39 which should be less equal to 0.55 does hold \\n\"]",
+        "ml_confidence": 0.6
+    },
+    {
+        "instance": {
+            "sn": "ATKB",
+            "mcg": 0.46,
+            "gvh": 0.61,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.48,
+            "alm1": 0.86,
+            "alm2": 0.87,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.86, 'sn': 'ATKB', 'gvh': 0.61, 'mcg': 0.46, 'alm2': 0.87}\", \"label(X,'1') does not hold because\\n\\tthe value of alm1 is 0.86 which should be less equal to 0.55 does not hold \\n\"]",
+        "ml_confidence": 1.0
+    },
+    {
+        "instance": {
+            "sn": "DSBA",
+            "mcg": 0.71,
+            "gvh": 0.71,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.4,
+            "alm1": 0.54,
+            "alm2": 0.39,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.54, 'sn': 'DSBA', 'gvh': 0.71, 'mcg': 0.71, 'alm2': 0.39}\", \"label(X,'1') does hold because\\n\\tthe value of alm1 is 0.54 which should be less equal to 0.55 does hold \\n\"]",
+        "ml_confidence": 1.0
+    },
+    {
+        "instance": {
+            "sn": "MTR",
+            "mcg": 0.74,
+            "gvh": 0.7,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.66,
+            "alm1": 0.65,
+            "alm2": 0.69,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.65, 'sn': 'MTR', 'gvh': 0.7, 'mcg': 0.74, 'alm2': 0.69}\", \"label(X,'1') does not hold because\\n\\tthe value of alm1 is 0.65 which should be less equal to 0.55 does not hold \\n\"]",
+        "ml_confidence": 0.6
+    },
+    {
+        "instance": {
+            "sn": "YCEE",
+            "mcg": 0.52,
+            "gvh": 0.54,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.62,
+            "alm1": 0.76,
+            "alm2": 0.79,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.76, 'sn': 'YCEE', 'gvh': 0.54, 'mcg': 0.52, 'alm2': 0.79}\", \"label(X,'1') does not hold because\\n\\tthe value of alm1 is 0.76 which should be less equal to 0.55 does not hold \\n\"]",
+        "ml_confidence": 0.6
+    },
+    {
+        "instance": {
+            "sn": "BCR",
+            "mcg": 0.79,
+            "gvh": 0.41,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.66,
+            "alm1": 0.81,
+            "alm2": 0.83,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.81, 'sn': 'BCR', 'gvh': 0.41, 'mcg': 0.79, 'alm2': 0.83}\", \"label(X,'1') does not hold because\\n\\tthe value of alm1 is 0.81 which should be less equal to 0.55 does not hold \\n\"]",
+        "ml_confidence": 0.8
+    },
+    {
+        "instance": {
+            "sn": "TONB",
+            "mcg": 0.57,
+            "gvh": 0.38,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.06,
+            "alm1": 0.49,
+            "alm2": 0.33,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.49, 'sn': 'TONB', 'gvh': 0.38, 'mcg': 0.57, 'alm2': 0.33}\", \"label(X,'1') does hold because\\n\\tthe value of alm1 is 0.49 which should be less equal to 0.55 does hold \\n\"]",
+        "ml_confidence": 0.8
+    },
+    {
+        "instance": {
+            "sn": "EMRA",
+            "mcg": 0.06,
+            "gvh": 0.61,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.49,
+            "alm1": 0.92,
+            "alm2": 0.37,
+            "label": 0
+        },
+        "ml_prediction": 1,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 1,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.92, 'sn': 'EMRA', 'gvh': 0.61, 'mcg': 0.06, 'alm2': 0.37}\", \"label(X,'1') does not hold because\\n\\tthe value of alm1 is 0.92 which should be less equal to 0.55 does not hold \\n\"]",
+        "ml_confidence": 0.8
+    },
+    {
+        "instance": {
+            "sn": "ARAC",
+            "mcg": 0.42,
+            "gvh": 0.4,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.56,
+            "alm1": 0.18,
+            "alm2": 0.3,
+            "label": 1
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 0,
+        "true_label": 1,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.18, 'sn': 'ARAC', 'gvh': 0.4, 'mcg': 0.42, 'alm2': 0.3}\", \"label(X,'1') does hold because\\n\\tthe value of alm1 is 0.18 which should be less equal to 0.55 does hold \\n\"]",
+        "ml_confidence": 0.8
+    },
+    {
+        "instance": {
+            "sn": "TOLA",
+            "mcg": 0.61,
+            "gvh": 0.47,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.0,
+            "alm1": 0.8,
+            "alm2": 0.32,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.8, 'sn': 'TOLA', 'gvh': 0.47, 'mcg': 0.61, 'alm2': 0.32}\", \"label(X,'1') does not hold because\\n\\tthe value of alm1 is 0.8 which should be less equal to 0.55 does not hold \\n\"]",
+        "ml_confidence": 0.6
+    },
+    {
+        "instance": {
+            "sn": "PTKA",
+            "mcg": 0.31,
+            "gvh": 0.47,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.29,
+            "alm1": 0.28,
+            "alm2": 0.39,
+            "label": 1
+        },
+        "ml_prediction": 1,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.28, 'sn': 'PTKA', 'gvh': 0.47, 'mcg': 0.31, 'alm2': 0.39}\", \"label(X,'1') does hold because\\n\\tthe value of alm1 is 0.28 which should be less equal to 0.55 does hold \\n\"]",
+        "ml_confidence": 0.6
+    },
+    {
+        "instance": {
+            "sn": "FTSN",
+            "mcg": 0.0,
+            "gvh": 0.51,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.35,
+            "alm1": 0.67,
+            "alm2": 0.44,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.67, 'sn': 'FTSN', 'gvh': 0.51, 'mcg': 0.0, 'alm2': 0.44}\", \"label(X,'1') does not hold because\\n\\tthe value of alm1 is 0.67 which should be less equal to 0.55 does not hold \\n\"]",
+        "ml_confidence": 0.8
+    },
+    {
+        "instance": {
+            "sn": "LSPA",
+            "mcg": 0.83,
+            "gvh": 0.37,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.61,
+            "alm1": 0.71,
+            "alm2": 0.74,
+            "label": 0
+        },
+        "ml_prediction": 1,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 1,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.71, 'sn': 'LSPA', 'gvh': 0.37, 'mcg': 0.83, 'alm2': 0.74}\", \"label(X,'1') does not hold because\\n\\tthe value of alm1 is 0.71 which should be less equal to 0.55 does not hold \\n\"]",
+        "ml_confidence": 0.6
+    },
+    {
+        "instance": {
+            "sn": "ASG1",
+            "mcg": 0.42,
+            "gvh": 0.24,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.57,
+            "alm1": 0.27,
+            "alm2": 0.37,
+            "label": 1
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 0,
+        "true_label": 1,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.27, 'sn': 'ASG1', 'gvh': 0.24, 'mcg': 0.42, 'alm2': 0.37}\", \"label(X,'1') does hold because\\n\\tthe value of alm1 is 0.27 which should be less equal to 0.55 does hold \\n\"]",
+        "ml_confidence": 1.0
+    },
+    {
+        "instance": {
+            "sn": "BGLX",
+            "mcg": 0.65,
+            "gvh": 0.57,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.47,
+            "alm1": 0.47,
+            "alm2": 0.51,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.47, 'sn': 'BGLX', 'gvh': 0.57, 'mcg': 0.65, 'alm2': 0.51}\", \"label(X,'1') does hold because\\n\\tthe value of alm1 is 0.47 which should be less equal to 0.55 does hold \\n\"]",
+        "ml_confidence": 0.8
+    },
+    {
+        "instance": {
+            "sn": "NLPB",
+            "mcg": 0.66,
+            "gvh": 0.49,
+            "lip": 1.0,
+            "chg": 0.5,
+            "aac": 0.54,
+            "alm1": 0.56,
+            "alm2": 0.36,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.56, 'sn': 'NLPB', 'gvh': 0.49, 'mcg': 0.66, 'alm2': 0.36}\", \"label(X,'1') does not hold because\\n\\tthe value of alm1 is 0.56 which should be less equal to 0.55 does not hold \\n\"]",
+        "ml_confidence": 0.8
+    },
+    {
+        "instance": {
+            "sn": "SYY",
+            "mcg": 0.3,
+            "gvh": 0.44,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.49,
+            "alm1": 0.22,
+            "alm2": 0.33,
+            "label": 1
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 0,
+        "true_label": 1,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.22, 'sn': 'SYY', 'gvh': 0.44, 'mcg': 0.3, 'alm2': 0.33}\", \"label(X,'1') does hold because\\n\\tthe value of alm1 is 0.22 which should be less equal to 0.55 does hold \\n\"]",
+        "ml_confidence": 0.6
+    },
+    {
+        "instance": {
+            "sn": "AGP",
+            "mcg": 0.74,
+            "gvh": 0.49,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.42,
+            "alm1": 0.54,
+            "alm2": 0.36,
+            "label": 0
+        },
+        "ml_prediction": 1,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.54, 'sn': 'AGP', 'gvh': 0.49, 'mcg': 0.74, 'alm2': 0.36}\", \"label(X,'1') does hold because\\n\\tthe value of alm1 is 0.54 which should be less equal to 0.55 does hold \\n\"]",
+        "ml_confidence": 1.0
+    },
+    {
+        "instance": {
+            "sn": "ARAH",
+            "mcg": 0.34,
+            "gvh": 0.49,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.58,
+            "alm1": 0.85,
+            "alm2": 0.8,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.85, 'sn': 'ARAH', 'gvh': 0.49, 'mcg': 0.34, 'alm2': 0.8}\", \"label(X,'1') does not hold because\\n\\tthe value of alm1 is 0.85 which should be less equal to 0.55 does not hold \\n\"]",
+        "ml_confidence": 0.8
+    },
+    {
+        "instance": {
+            "sn": "GLNP",
+            "mcg": 0.49,
+            "gvh": 0.42,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.53,
+            "alm1": 0.79,
+            "alm2": 0.81,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.79, 'sn': 'GLNP', 'gvh': 0.42, 'mcg': 0.49, 'alm2': 0.81}\", \"label(X,'1') does not hold because\\n\\tthe value of alm1 is 0.79 which should be less equal to 0.55 does not hold \\n\"]",
+        "ml_confidence": 0.8
+    },
+    {
+        "instance": {
+            "sn": "AMY2",
+            "mcg": 0.21,
+            "gvh": 0.34,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.51,
+            "alm1": 0.28,
+            "alm2": 0.39,
+            "label": 1
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 0,
+        "true_label": 1,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.28, 'sn': 'AMY2', 'gvh': 0.34, 'mcg': 0.21, 'alm2': 0.39}\", \"label(X,'1') does hold because\\n\\tthe value of alm1 is 0.28 which should be less equal to 0.55 does hold \\n\"]",
+        "ml_confidence": 0.6
+    },
+    {
+        "instance": {
+            "sn": "METR",
+            "mcg": 0.52,
+            "gvh": 0.57,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.42,
+            "alm1": 0.47,
+            "alm2": 0.54,
+            "label": 1
+        },
+        "ml_prediction": 1,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.47, 'sn': 'METR', 'gvh': 0.57, 'mcg': 0.52, 'alm2': 0.54}\", \"label(X,'1') does hold because\\n\\tthe value of alm1 is 0.47 which should be less equal to 0.55 does hold \\n\"]",
+        "ml_confidence": 0.6
+    },
+    {
+        "instance": {
+            "sn": "DSBD",
+            "mcg": 0.76,
+            "gvh": 0.71,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.5,
+            "alm1": 0.71,
+            "alm2": 0.75,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.71, 'sn': 'DSBD', 'gvh': 0.71, 'mcg': 0.76, 'alm2': 0.75}\", \"label(X,'1') does not hold because\\n\\tthe value of alm1 is 0.71 which should be less equal to 0.55 does not hold \\n\"]",
+        "ml_confidence": 0.6
+    },
+    {
+        "instance": {
+            "sn": "IF1",
+            "mcg": 0.29,
+            "gvh": 0.3,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.45,
+            "alm1": 0.03,
+            "alm2": 0.17,
+            "label": 1
+        },
+        "ml_prediction": 1,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.03, 'sn': 'IF1', 'gvh': 0.3, 'mcg': 0.29, 'alm2': 0.17}\", \"label(X,'1') does hold because\\n\\tthe value of alm1 is 0.03 which should be less equal to 0.55 does hold \\n\"]",
+        "ml_confidence": 0.8
+    },
+    {
+        "instance": {
+            "sn": "FTSL",
+            "mcg": 0.36,
+            "gvh": 0.45,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.38,
+            "alm1": 0.79,
+            "alm2": 0.17,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.79, 'sn': 'FTSL', 'gvh': 0.45, 'mcg': 0.36, 'alm2': 0.17}\", \"label(X,'1') does not hold because\\n\\tthe value of alm1 is 0.79 which should be less equal to 0.55 does not hold \\n\"]",
+        "ml_confidence": 1.0
+    },
+    {
+        "instance": {
+            "sn": "NMPC",
+            "mcg": 0.67,
+            "gvh": 0.84,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.74,
+            "alm1": 0.54,
+            "alm2": 0.37,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.54, 'sn': 'NMPC', 'gvh': 0.84, 'mcg': 0.67, 'alm2': 0.37}\", \"label(X,'1') does hold because\\n\\tthe value of alm1 is 0.54 which should be less equal to 0.55 does hold \\n\"]",
+        "ml_confidence": 1.0
+    },
+    {
+        "instance": {
+            "sn": "ECOT",
+            "mcg": 0.67,
+            "gvh": 0.81,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.25,
+            "alm1": 0.42,
+            "alm2": 0.25,
+            "label": 0
+        },
+        "ml_prediction": 1,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.42, 'sn': 'ECOT', 'gvh': 0.81, 'mcg': 0.67, 'alm2': 0.25}\", \"label(X,'1') does hold because\\n\\tthe value of alm1 is 0.42 which should be less equal to 0.55 does hold \\n\"]",
+        "ml_confidence": 0.6
+    },
+    {
+        "instance": {
+            "sn": "SYL",
+            "mcg": 0.04,
+            "gvh": 0.31,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.41,
+            "alm1": 0.29,
+            "alm2": 0.39,
+            "label": 1
+        },
+        "ml_prediction": 1,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.29, 'sn': 'SYL', 'gvh': 0.31, 'mcg': 0.04, 'alm2': 0.39}\", \"label(X,'1') does hold because\\n\\tthe value of alm1 is 0.29 which should be less equal to 0.55 does hold \\n\"]",
+        "ml_confidence": 1.0
+    },
+    {
+        "instance": {
+            "sn": "GLPT",
+            "mcg": 0.31,
+            "gvh": 0.5,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.57,
+            "alm1": 0.84,
+            "alm2": 0.85,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.84, 'sn': 'GLPT', 'gvh': 0.5, 'mcg': 0.31, 'alm2': 0.85}\", \"label(X,'1') does not hold because\\n\\tthe value of alm1 is 0.84 which should be less equal to 0.55 does not hold \\n\"]",
+        "ml_confidence": 0.6
+    },
+    {
+        "instance": {
+            "sn": "FTSH",
+            "mcg": 0.81,
+            "gvh": 0.44,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.42,
+            "alm1": 0.67,
+            "alm2": 0.68,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.67, 'sn': 'FTSH', 'gvh': 0.44, 'mcg': 0.81, 'alm2': 0.68}\", \"label(X,'1') does not hold because\\n\\tthe value of alm1 is 0.67 which should be less equal to 0.55 does not hold \\n\"]",
+        "ml_confidence": 1.0
+    },
+    {
+        "instance": {
+            "sn": "CYPB",
+            "mcg": 0.3,
+            "gvh": 0.16,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.56,
+            "alm1": 0.11,
+            "alm2": 0.23,
+            "label": 1
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 0,
+        "true_label": 1,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.11, 'sn': 'CYPB', 'gvh': 0.16, 'mcg': 0.3, 'alm2': 0.23}\", \"label(X,'1') does hold because\\n\\tthe value of alm1 is 0.11 which should be less equal to 0.55 does hold \\n\"]",
+        "ml_confidence": 0.8
+    },
+    {
+        "instance": {
+            "sn": "ARAF",
+            "mcg": 0.66,
+            "gvh": 0.86,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.34,
+            "alm1": 0.41,
+            "alm2": 0.36,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.41, 'sn': 'ARAF', 'gvh': 0.86, 'mcg': 0.66, 'alm2': 0.36}\", \"label(X,'1') does hold because\\n\\tthe value of alm1 is 0.41 which should be less equal to 0.55 does hold \\n\"]",
+        "ml_confidence": 0.8
+    },
+    {
+        "instance": {
+            "sn": "NFRA",
+            "mcg": 0.61,
+            "gvh": 0.75,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.51,
+            "alm1": 0.33,
+            "alm2": 0.33,
+            "label": 0
+        },
+        "ml_prediction": 1,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.33, 'sn': 'NFRA', 'gvh': 0.75, 'mcg': 0.61, 'alm2': 0.33}\", \"label(X,'1') does hold because\\n\\tthe value of alm1 is 0.33 which should be less equal to 0.55 does hold \\n\"]",
+        "ml_confidence": 0.6
+    },
+    {
+        "instance": {
+            "sn": "PSTA",
+            "mcg": 0.34,
+            "gvh": 0.67,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.52,
+            "alm1": 0.76,
+            "alm2": 0.79,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.76, 'sn': 'PSTA', 'gvh': 0.67, 'mcg': 0.34, 'alm2': 0.79}\", \"label(X,'1') does not hold because\\n\\tthe value of alm1 is 0.76 which should be less equal to 0.55 does not hold \\n\"]",
+        "ml_confidence": 0.6
+    },
+    {
+        "instance": {
+            "sn": "TSX",
+            "mcg": 0.68,
+            "gvh": 0.76,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.84,
+            "alm1": 0.45,
+            "alm2": 0.27,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.45, 'sn': 'TSX', 'gvh': 0.76, 'mcg': 0.68, 'alm2': 0.27}\", \"label(X,'1') does hold because\\n\\tthe value of alm1 is 0.45 which should be less equal to 0.55 does hold \\n\"]",
+        "ml_confidence": 0.6
+    },
+    {
+        "instance": {
+            "sn": "NHAB",
+            "mcg": 0.7,
+            "gvh": 0.46,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.56,
+            "alm1": 0.78,
+            "alm2": 0.73,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.78, 'sn': 'NHAB', 'gvh': 0.46, 'mcg': 0.7, 'alm2': 0.73}\", \"label(X,'1') does not hold because\\n\\tthe value of alm1 is 0.78 which should be less equal to 0.55 does not hold \\n\"]",
+        "ml_confidence": 0.6
+    },
+    {
+        "instance": {
+            "sn": "PTDA",
+            "mcg": 0.6,
+            "gvh": 0.46,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.45,
+            "alm1": 0.81,
+            "alm2": 0.83,
+            "label": 0
+        },
+        "ml_prediction": 1,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 1,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.81, 'sn': 'PTDA', 'gvh': 0.46, 'mcg': 0.6, 'alm2': 0.83}\", \"label(X,'1') does not hold because\\n\\tthe value of alm1 is 0.81 which should be less equal to 0.55 does not hold \\n\"]",
+        "ml_confidence": 0.6
+    },
+    {
+        "instance": {
+            "sn": "SERC",
+            "mcg": 0.49,
+            "gvh": 0.43,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.49,
+            "alm1": 0.3,
+            "alm2": 0.4,
+            "label": 1
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 0,
+        "true_label": 1,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.3, 'sn': 'SERC', 'gvh': 0.43, 'mcg': 0.49, 'alm2': 0.4}\", \"label(X,'1') does hold because\\n\\tthe value of alm1 is 0.3 which should be less equal to 0.55 does hold \\n\"]",
+        "ml_confidence": 0.6
+    },
+    {
+        "instance": {
+            "sn": "CRL",
+            "mcg": 0.4,
+            "gvh": 0.45,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.38,
+            "alm1": 0.22,
+            "alm2": 0.0,
+            "label": 1
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 0,
+        "true_label": 1,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.22, 'sn': 'CRL', 'gvh': 0.45, 'mcg': 0.4, 'alm2': 0.0}\", \"label(X,'1') does hold because\\n\\tthe value of alm1 is 0.22 which should be less equal to 0.55 does hold \\n\"]",
+        "ml_confidence": 0.8
+    },
+    {
+        "instance": {
+            "sn": "PSTC",
+            "mcg": 0.58,
+            "gvh": 0.34,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.56,
+            "alm1": 0.87,
+            "alm2": 0.81,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.87, 'sn': 'PSTC', 'gvh': 0.34, 'mcg': 0.58, 'alm2': 0.81}\", \"label(X,'1') does not hold because\\n\\tthe value of alm1 is 0.87 which should be less equal to 0.55 does not hold \\n\"]",
+        "ml_confidence": 0.6
+    },
+    {
+        "instance": {
+            "sn": "SLP",
+            "mcg": 0.68,
+            "gvh": 0.49,
+            "lip": 1.0,
+            "chg": 0.5,
+            "aac": 0.62,
+            "alm1": 0.55,
+            "alm2": 0.28,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.55, 'sn': 'SLP', 'gvh': 0.49, 'mcg': 0.68, 'alm2': 0.28}\", \"label(X,'1') does hold because\\n\\tthe value of alm1 is 0.55 which should be less equal to 0.55 does hold \\n\"]",
+        "ml_confidence": 0.6
+    },
+    {
+        "instance": {
+            "sn": "GLPD",
+            "mcg": 0.61,
+            "gvh": 0.45,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.48,
+            "alm1": 0.35,
+            "alm2": 0.41,
+            "label": 1
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 0,
+        "true_label": 1,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.35, 'sn': 'GLPD', 'gvh': 0.45, 'mcg': 0.61, 'alm2': 0.41}\", \"label(X,'1') does hold because\\n\\tthe value of alm1 is 0.35 which should be less equal to 0.55 does hold \\n\"]",
+        "ml_confidence": 0.8
+    },
+    {
+        "instance": {
+            "sn": "METB",
+            "mcg": 0.47,
+            "gvh": 0.29,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.51,
+            "alm1": 0.33,
+            "alm2": 0.43,
+            "label": 1
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 0,
+        "true_label": 1,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.33, 'sn': 'METB', 'gvh': 0.29, 'mcg': 0.47, 'alm2': 0.43}\", \"label(X,'1') does hold because\\n\\tthe value of alm1 is 0.33 which should be less equal to 0.55 does hold \\n\"]",
+        "ml_confidence": 0.6
+    },
+    {
+        "instance": {
+            "sn": "DSBB",
+            "mcg": 0.5,
+            "gvh": 0.66,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.31,
+            "alm1": 0.92,
+            "alm2": 0.92,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.92, 'sn': 'DSBB', 'gvh': 0.66, 'mcg': 0.5, 'alm2': 0.92}\", \"label(X,'1') does not hold because\\n\\tthe value of alm1 is 0.92 which should be less equal to 0.55 does not hold \\n\"]",
+        "ml_confidence": 1.0
+    },
+    {
+        "instance": {
+            "sn": "SECF",
+            "mcg": 0.11,
+            "gvh": 0.5,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.58,
+            "alm1": 0.72,
+            "alm2": 0.68,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.72, 'sn': 'SECF', 'gvh': 0.5, 'mcg': 0.11, 'alm2': 0.68}\", \"label(X,'1') does not hold because\\n\\tthe value of alm1 is 0.72 which should be less equal to 0.55 does not hold \\n\"]",
+        "ml_confidence": 1.0
+    },
+    {
+        "instance": {
+            "sn": "NUPC",
+            "mcg": 0.7,
+            "gvh": 0.53,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.7,
+            "alm1": 0.86,
+            "alm2": 0.87,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.86, 'sn': 'NUPC', 'gvh': 0.53, 'mcg': 0.7, 'alm2': 0.87}\", \"label(X,'1') does not hold because\\n\\tthe value of alm1 is 0.86 which should be less equal to 0.55 does not hold \\n\"]",
+        "ml_confidence": 1.0
+    },
+    {
+        "instance": {
+            "sn": "MULI",
+            "mcg": 0.77,
+            "gvh": 0.57,
+            "lip": 1.0,
+            "chg": 0.5,
+            "aac": 0.37,
+            "alm1": 0.54,
+            "alm2": 0.01,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.54, 'sn': 'MULI', 'gvh': 0.57, 'mcg': 0.77, 'alm2': 0.01}\", \"label(X,'1') does hold because\\n\\tthe value of alm1 is 0.54 which should be less equal to 0.55 does hold \\n\"]",
+        "ml_confidence": 0.6
+    },
+    {
+        "instance": {
+            "sn": "UHPB",
+            "mcg": 0.79,
+            "gvh": 0.54,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.5,
+            "alm1": 0.66,
+            "alm2": 0.68,
+            "label": 0
+        },
+        "ml_prediction": 1,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 1,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.66, 'sn': 'UHPB', 'gvh': 0.54, 'mcg': 0.79, 'alm2': 0.68}\", \"label(X,'1') does not hold because\\n\\tthe value of alm1 is 0.66 which should be less equal to 0.55 does not hold \\n\"]",
+        "ml_confidence": 0.6
+    },
+    {
+        "instance": {
+            "sn": "POTD",
+            "mcg": 0.63,
+            "gvh": 0.8,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.46,
+            "alm1": 0.31,
+            "alm2": 0.29,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.31, 'sn': 'POTD', 'gvh': 0.8, 'mcg': 0.63, 'alm2': 0.29}\", \"label(X,'1') does hold because\\n\\tthe value of alm1 is 0.31 which should be less equal to 0.55 does hold \\n\"]",
+        "ml_confidence": 0.8
+    },
+    {
+        "instance": {
+            "sn": "TOLQ",
+            "mcg": 0.63,
+            "gvh": 0.75,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.64,
+            "alm1": 0.73,
+            "alm2": 0.66,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.73, 'sn': 'TOLQ', 'gvh': 0.75, 'mcg': 0.63, 'alm2': 0.66}\", \"label(X,'1') does not hold because\\n\\tthe value of alm1 is 0.73 which should be less equal to 0.55 does not hold \\n\"]",
+        "ml_confidence": 1.0
+    },
+    {
+        "instance": {
+            "sn": "FEPG",
+            "mcg": 0.77,
+            "gvh": 0.55,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.51,
+            "alm1": 0.78,
+            "alm2": 0.74,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.78, 'sn': 'FEPG', 'gvh': 0.55, 'mcg': 0.77, 'alm2': 0.74}\", \"label(X,'1') does not hold because\\n\\tthe value of alm1 is 0.78 which should be less equal to 0.55 does not hold \\n\"]",
+        "ml_confidence": 0.8
+    },
+    {
+        "instance": {
+            "sn": "XYLA",
+            "mcg": 0.16,
+            "gvh": 0.43,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.54,
+            "alm1": 0.27,
+            "alm2": 0.37,
+            "label": 1
+        },
+        "ml_prediction": 1,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.27, 'sn': 'XYLA', 'gvh': 0.43, 'mcg': 0.16, 'alm2': 0.37}\", \"label(X,'1') does hold because\\n\\tthe value of alm1 is 0.27 which should be less equal to 0.55 does hold \\n\"]",
+        "ml_confidence": 0.6
+    },
+    {
+        "instance": {
+            "sn": "MALM",
+            "mcg": 0.74,
+            "gvh": 0.47,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.5,
+            "alm1": 0.57,
+            "alm2": 0.42,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.57, 'sn': 'MALM', 'gvh': 0.47, 'mcg': 0.74, 'alm2': 0.42}\", \"label(X,'1') does not hold because\\n\\tthe value of alm1 is 0.57 which should be less equal to 0.55 does not hold \\n\"]",
+        "ml_confidence": 0.6
+    },
+    {
+        "instance": {
+            "sn": "FADL",
+            "mcg": 0.78,
+            "gvh": 0.68,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.83,
+            "alm1": 0.4,
+            "alm2": 0.29,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.4, 'sn': 'FADL', 'gvh': 0.68, 'mcg': 0.78, 'alm2': 0.29}\", \"label(X,'1') does hold because\\n\\tthe value of alm1 is 0.4 which should be less equal to 0.55 does hold \\n\"]",
+        "ml_confidence": 0.8
+    },
+    {
+        "instance": {
+            "sn": "SYD",
+            "mcg": 0.38,
+            "gvh": 0.3,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.43,
+            "alm1": 0.29,
+            "alm2": 0.39,
+            "label": 1
+        },
+        "ml_prediction": 1,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.29, 'sn': 'SYD', 'gvh': 0.3, 'mcg': 0.38, 'alm2': 0.39}\", \"label(X,'1') does hold because\\n\\tthe value of alm1 is 0.29 which should be less equal to 0.55 does hold \\n\"]",
+        "ml_confidence": 1.0
+    },
+    {
+        "instance": {
+            "sn": "CYOB",
+            "mcg": 0.59,
+            "gvh": 0.29,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.64,
+            "alm1": 0.75,
+            "alm2": 0.77,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.75, 'sn': 'CYOB', 'gvh': 0.29, 'mcg': 0.59, 'alm2': 0.77}\", \"label(X,'1') does not hold because\\n\\tthe value of alm1 is 0.75 which should be less equal to 0.55 does not hold \\n\"]",
+        "ml_confidence": 0.8
+    },
+    {
+        "instance": {
+            "sn": "LYSP",
+            "mcg": 0.34,
+            "gvh": 0.51,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.67,
+            "alm1": 0.9,
+            "alm2": 0.9,
+            "label": 0
+        },
+        "ml_prediction": 1,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 1,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.9, 'sn': 'LYSP', 'gvh': 0.51, 'mcg': 0.34, 'alm2': 0.9}\", \"label(X,'1') does not hold because\\n\\tthe value of alm1 is 0.9 which should be less equal to 0.55 does not hold \\n\"]",
+        "ml_confidence": 0.6
+    },
+    {
+        "instance": {
+            "sn": "NHAA",
+            "mcg": 0.89,
+            "gvh": 0.55,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.51,
+            "alm1": 0.72,
+            "alm2": 0.76,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.72, 'sn': 'NHAA', 'gvh': 0.55, 'mcg': 0.89, 'alm2': 0.76}\", \"label(X,'1') does not hold because\\n\\tthe value of alm1 is 0.72 which should be less equal to 0.55 does not hold \\n\"]",
+        "ml_confidence": 0.6
+    },
+    {
+        "instance": {
+            "sn": "CYSB",
+            "mcg": 0.29,
+            "gvh": 0.37,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.48,
+            "alm1": 0.44,
+            "alm2": 0.52,
+            "label": 1
+        },
+        "ml_prediction": 1,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.44, 'sn': 'CYSB', 'gvh': 0.37, 'mcg': 0.29, 'alm2': 0.52}\", \"label(X,'1') does hold because\\n\\tthe value of alm1 is 0.44 which should be less equal to 0.55 does hold \\n\"]",
+        "ml_confidence": 0.6
+    },
+    {
+        "instance": {
+            "sn": "SYV",
+            "mcg": 0.0,
+            "gvh": 0.38,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.42,
+            "alm1": 0.48,
+            "alm2": 0.55,
+            "label": 1
+        },
+        "ml_prediction": 1,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.48, 'sn': 'SYV', 'gvh': 0.38, 'mcg': 0.0, 'alm2': 0.55}\", \"label(X,'1') does hold because\\n\\tthe value of alm1 is 0.48 which should be less equal to 0.55 does hold \\n\"]",
+        "ml_confidence": 0.8
+    },
+    {
+        "instance": {
+            "sn": "RHAS",
+            "mcg": 0.38,
+            "gvh": 0.4,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.63,
+            "alm1": 0.25,
+            "alm2": 0.35,
+            "label": 1
+        },
+        "ml_prediction": 1,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.25, 'sn': 'RHAS', 'gvh': 0.4, 'mcg': 0.38, 'alm2': 0.35}\", \"label(X,'1') does hold because\\n\\tthe value of alm1 is 0.25 which should be less equal to 0.55 does hold \\n\"]",
+        "ml_confidence": 0.6
+    },
+    {
+        "instance": {
+            "sn": "ACEA",
+            "mcg": 0.07,
+            "gvh": 0.4,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.54,
+            "alm1": 0.35,
+            "alm2": 0.44,
+            "label": 1
+        },
+        "ml_prediction": 1,
+        "foldse_prediction": 1,
+        "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.35, 'sn': 'ACEA', 'gvh': 0.4, 'mcg': 0.07, 'alm2': 0.44}\", \"label(X,'1') does hold because\\n\\tthe value of alm1 is 0.35 which should be less equal to 0.55 does hold \\n\"]",
+        "ml_confidence": 0.8
+    },
+    {
+        "instance": {
+            "sn": "BETT",
+            "mcg": 0.52,
+            "gvh": 0.39,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.65,
+            "alm1": 0.71,
+            "alm2": 0.73,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.71, 'sn': 'BETT', 'gvh': 0.39, 'mcg': 0.52, 'alm2': 0.73}\", \"label(X,'1') does not hold because\\n\\tthe value of alm1 is 0.71 which should be less equal to 0.55 does not hold \\n\"]",
+        "ml_confidence": 0.8
+    },
+    {
+        "instance": {
+            "sn": "PNTA",
+            "mcg": 0.33,
+            "gvh": 0.37,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.46,
+            "alm1": 0.65,
+            "alm2": 0.69,
+            "label": 0
+        },
+        "ml_prediction": 0,
+        "foldse_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'alm1': 0.65, 'sn': 'PNTA', 'gvh': 0.37, 'mcg': 0.33, 'alm2': 0.69}\", \"label(X,'1') does not hold because\\n\\tthe value of alm1 is 0.65 which should be less equal to 0.55 does not hold \\n\"]",
+        "ml_confidence": 0.6
+    }
+]

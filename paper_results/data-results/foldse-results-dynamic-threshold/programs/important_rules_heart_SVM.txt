@@ -1,0 +1,66 @@
+Rule used 10 times:
+[F]label(X,'1') :- [F]major_vessels(X,'0').
+
+Rule used 5 times:
+[F]label(X,'1') :- [F]thal(X,'3'), not [F]major_vessels(X,'0'), not [T]chest_pain(X,'4'), not [U]ab1(X,'True').
+
+Rule used 2 times:
+[T]label(X,'1') :- [T]major_vessels(X,'0').
+
+Rule used 2 times:
+[F]label(X,'1') :- [T]thal(X,'3'), not [F]major_vessels(X,'0'), not [T]chest_pain(X,'4'), not [U]ab1(X,'True').
+
+Rule used 2 times:
+[F]label(X,'1') :- [F]thal(X,'3'), not [F]major_vessels(X,'0'), not [F]chest_pain(X,'4'), not [U]ab1(X,'True').
+
+Rule used 1 times:
+{'major_vessels': '0', 'thal': '6', 'chest_pain': '4', 'maximum_heart_rate_achieved': 138.0}
+
+Rule used 1 times:
+{'major_vessels': '2', 'thal': '3', 'chest_pain': '4', 'maximum_heart_rate_achieved': 160.0}
+
+Rule used 1 times:
+{'major_vessels': '3', 'thal': '7', 'chest_pain': '4', 'maximum_heart_rate_achieved': 131.0}
+
+Rule used 1 times:
+{'major_vessels': '2', 'thal': '7', 'chest_pain': '4', 'maximum_heart_rate_achieved': 150.0}
+
+Rule used 1 times:
+{'major_vessels': '0', 'thal': '7', 'chest_pain': '1', 'maximum_heart_rate_achieved': 145.0}
+
+Rule used 1 times:
+{'major_vessels': '1', 'thal': '7', 'chest_pain': '2', 'maximum_heart_rate_achieved': 195.0}
+
+Rule used 1 times:
+{'major_vessels': '1', 'thal': '7', 'chest_pain': '4', 'maximum_heart_rate_achieved': 138.0}
+
+Rule used 1 times:
+{'major_vessels': '1', 'thal': '3', 'chest_pain': '1', 'maximum_heart_rate_achieved': 131.0}
+
+Rule used 1 times:
+[F]ab1(X,'True') :- not [T]major_vessels(X,'1'), maximum_heart_rate_achieved(X,N1), [T]N1=<152.0.
+
+Rule used 1 times:
+[T]label(X,'1') :- [T]thal(X,'3'), not [F]major_vessels(X,'0'), not [F]chest_pain(X,'4'), not [U]ab1(X,'True').
+
+Rule used 1 times:
+{'major_vessels': '1', 'thal': '3', 'chest_pain': '4', 'maximum_heart_rate_achieved': 125.0}
+
+Rule used 1 times:
+{'major_vessels': '3', 'thal': '7', 'chest_pain': '4', 'maximum_heart_rate_achieved': 147.0}
+
+Rule used 1 times:
+{'major_vessels': '1', 'thal': '7', 'chest_pain': '3', 'maximum_heart_rate_achieved': 151.0}
+
+Rule used 1 times:
+{'major_vessels': '2', 'thal': '3', 'chest_pain': '1', 'maximum_heart_rate_achieved': 151.0}
+
+Rule used 1 times:
+[T]ab1(X,'True') :- not [F]major_vessels(X,'1'), maximum_heart_rate_achieved(X,N1), [T]N1=<152.0.
+
+Rule used 1 times:
+[F]label(X,'1') :- [T]thal(X,'3'), not [F]major_vessels(X,'0'), not [F]chest_pain(X,'4'), not [U]ab1(X,'True').
+
+Rule used 1 times:
+{'major_vessels': '1', 'thal': '7', 'chest_pain': '4', 'maximum_heart_rate_achieved': 142.0}
+

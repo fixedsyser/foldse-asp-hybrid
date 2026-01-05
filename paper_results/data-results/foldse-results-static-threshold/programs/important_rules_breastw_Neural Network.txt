@@ -1,0 +1,9 @@
+Rule used 1 times:
+{'cell_size_uniformity': '5', 'bare_nuclei': '9', 'bland_chromatin': '7', 'normal_nucleoli': '8', 'cell_shape_uniformity': '4', 'clump_thickness': '6', 'single_epi_cell_size': '3'}
+
+Rule used 1 times:
+[F]ab3(X,'True') :- not [F]bare_nuclei(X,'10'), not [F]clump_thickness(X,'10'), [F]bare_nuclei(X,'1'), not [U]ab2(X,'True').
+
+Rule used 1 times:
+[T]label(X,'1') :- not [F]cell_size_uniformity(X,'1'), not [U]ab3(X,'True').
+
